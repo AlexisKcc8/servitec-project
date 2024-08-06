@@ -31,6 +31,15 @@ module.exports = {
       width: "80%",
     },
     extend: {
+      animation: {
+        bounce: "bounce 4s infinite",
+      },
+      keyframes: {
+        bounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+      },
       maxWidth: {
         "80p": "80%", // Clase personalizada para el ancho máximo del 80%
       },

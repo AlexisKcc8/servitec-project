@@ -1,10 +1,12 @@
 import { Hero } from "@/myComponents/Hero";
+import { PurchaseMethod } from "@/myComponents/PurchaseMethod";
 
 function App() {
   return (
     <>
-      <main className="sm:px-36 min-h-screen flex justify-center">
+      <main className="sm:px-36 min-h-screen flex flex-col justify-center">
         <Hero />
+        <PurchaseMethod />
         <br />
         <br />
         <br />
