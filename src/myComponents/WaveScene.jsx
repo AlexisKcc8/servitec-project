@@ -60,15 +60,15 @@ const WaveScene = () => {
     animate();
 
     // Resize handler
-    const onWindowResize = () => {
-      const newAspectRatio = window.innerWidth / window.innerHeight;
-      plane.geometry.dispose();
-      plane.geometry = new THREE.PlaneGeometry(newAspectRatio * 10, 20, 32, 32);
-      camera.aspect = newAspectRatio;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-    };
-    window.addEventListener("resize", onWindowResize);
+    // const onWindowResize = () => {
+    //   const newAspectRatio = window.innerWidth / window.innerHeight;
+    //   plane.geometry.dispose();
+    //   plane.geometry = new THREE.PlaneGeometry(newAspectRatio * 10, 20, 32, 32);
+    //   camera.aspect = newAspectRatio;
+    //   camera.updateProjectionMatrix();
+    //   renderer.setSize(window.innerWidth, window.innerHeight);
+    // };
+    // window.addEventListener("resize", onWindowResize);
 
     return () => {
       mountRef.current.removeChild(renderer.domElement);
