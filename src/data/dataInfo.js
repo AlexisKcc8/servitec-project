@@ -58,3 +58,38 @@ export const purchaseMethod = [
     text: "Envió de producto u obtener en sucursal.",
   },
 ];
+
+export const productsBrands = [
+  {
+    name: "kingtons",
+    urlBrand: "/imgs/logo-kingston.svg",
+  },
+  {
+    name: "elegate",
+    urlBrand: "/imgs/logo-elegate.svg",
+  },
+  {
+    name: "ios",
+    urlBrand: "/imgs/logo-ios.svg",
+  },
+  {
+    name: "moreka",
+    urlBrand: "/imgs/logo-moreka.svg",
+  },
+  {
+    name: "motorola",
+    urlBrand: "/imgs/logo-motorola.svg",
+  },
+  {
+    name: "samsung",
+    urlBrand: "/imgs/logo-samsung.svg",
+  },
+  {
+    name: "stylos",
+    urlBrand: "/imgs/logo-stylos.svg",
+  },
+  {
+    name: "tpLink",
+    urlBrand: "/imgs/logo-tplink.svg",
+  },
+];

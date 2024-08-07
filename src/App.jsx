@@ -1,4 +1,5 @@
 import { Hero } from "@/myComponents/Hero";
+import { BannerBrand } from "@/myComponents/BannerBrand";
 import { PurchaseMethod } from "@/myComponents/PurchaseMethod";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <main className="sm:px-36 min-h-screen flex flex-col justify-center">
         <Hero />
+        <BannerBrand />
         <PurchaseMethod />
         <br />
         <br />
