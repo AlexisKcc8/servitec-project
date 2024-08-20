@@ -39,14 +39,14 @@ export const ProductCarousel = () => {
 
       <article
         ref={carouselRef}
-        className="carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 overflow-y-hidden pl-[1.5rem] laptop:pl-[8.5rem] my-6"
+        className="carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 overflow-y-hidden pl-[.5rem] laptop:pl-[12rem] m-2 p-6"
       >
         {products.map((product) => (
           <CardProduct key={product.name} productData={product} />
         ))}
       </article>
 
-      <footer className="flex justify-end items-center py-2 px-4 gap-4 text-black font-bold text-xl">
+      <footer className="flex justify-end items-center py-2 px-4 gap-4 text-black font-bold text-xl laptop:pr-14">
         <button
           onClick={handlePrev}
           className=" bg-[#dcdce1] w-[2.5rem] h-[2.5rem] rounded-full z-10 flex justify-center items-center"
