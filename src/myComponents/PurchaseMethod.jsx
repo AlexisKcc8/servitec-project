@@ -4,18 +4,19 @@ import { StoreSvg } from "./icons/StoreSvg";
 
 export const PurchaseMethod = () => {
   return (
-    <section className="h-screen flex justify-center">
-      <article className=" h-[100%] flex flex-col items-center px-5 laptop:max-w-80p laptop:h-[80%] laptop:pt-0 ">
+    <section className="flex justify-center">
+      <article className="flex flex-col items-center px-5 laptop:w-[80%] laptop:pt-0">
         <header className="flex flex-col items-start justify-start">
-          <h2 className="text-[2.5rem] font-semibold tracking-tight leading-none laptop:text-5xl">
+          <h2 className="text-[2rem] font-semibold tracking-tight leading-none laptop:text-5xl">
             Nuestro método de compra.
           </h2>
+
           <h4 className="text-[1.1rem] text-gray-700">
             Experiencia online o en sucursal.
           </h4>
         </header>
 
-        <section className="flex flex-wrap w-[100%] laptop:mt-10">
+        <section className="flex flex-wrap w-[100%] laptop:mt-10 laptop:px-24">
           <aside className="w-[100%]  laptop:w-[50%] my-10 laptop:my-0">
             <article className="flex flex-col relative gap-8 px-4  min-w-[312px]">
               <div className="w-[3px] absolute left-[29px] top-[12px] h-[90%] -z-10 bg-servitect-800"></div>

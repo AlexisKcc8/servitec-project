@@ -7,8 +7,11 @@ export const ButtonLinkWhatsApp = (props) => {
 
   Gracias y quedo atento a su respuesta.`;
 
-  const { message = defaultMessage } = props;
+  const defaultTitle = "+Información";
 
+  const { message = defaultMessage, title = defaultTitle } = props;
+
+  console.log(message);
   let whatsappLink = `https://wa.me/525656401126?text=${encodeURIComponent(
     message
   )}`;
@@ -18,9 +21,10 @@ export const ButtonLinkWhatsApp = (props) => {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-green-500 flex w-[3.5rem] h-[3.5rem] laptop:w-[4rem] laptop:h-[4rem] rounded-[50%] justify-center items-center fixed bottom-4 right-4 "
+      className="bg-servitect-800 w-[100%] flex justify-center items-center p-2 rounded-2xl text-white font-semibold"
     >
       <WhatsApp />
+      {title}
     </a>
   );
 };

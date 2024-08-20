@@ -84,6 +84,26 @@ main {
 
 }
 
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-container {
+  -ms-overflow-style: none;
+  /* Ocultar barra de scroll en IE y Edge */
+  scrollbar-width: none;
+  /* Ocultar barra de scroll en Firefox */
+
+}
+
+/* .carousel-slider {
+  border: 10px solid green;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-align: x;
+  scroll-snap-type: mandatory
+} */
+
 @layer base {
   * {
     @apply border-border;
