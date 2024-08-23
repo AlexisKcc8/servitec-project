@@ -69,8 +69,11 @@
   }
 }
 
-main {
+html {
+  scroll-behavior: smooth;
+}
 
+main {
   font-family: "Figtree", 'Segoe UI',
     Tahoma,
     Geneva,

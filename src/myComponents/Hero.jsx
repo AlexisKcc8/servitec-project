@@ -21,12 +21,16 @@ export const Hero = () => {
           La tecnología al servicio de tu comodidad: Productos y servicios
           diseñados para hacer tu vida más fácil y conveniente.
         </h2>
-        <Button className="z-10 font-bold text-xl bg-servitect-main text-white p-6 hover:bg-servitect-900 gap-2">
+        <Button className="z-10 font-bold text-xl bg-servitect-main text-white p-6 hover:bg-servitect-900 gap-2 ease-in duration-300">
           <StoreSvg /> Mirar Productos
         </Button>
-        <Button className="z-10 font-bold text-xl bg-[transparent] text-black hover:bg-slate-300 p-6">
+
+        <a
+          href="#our-services"
+          className="z-10 flex font-bold text-xl bg-[transparent] text-black hover:bg-slate-300 ease-in duration-300 p-4 rounded-lg"
+        >
           <ArrowDown /> Servicios
-        </Button>
+        </a>
       </section>
     </header>
   );

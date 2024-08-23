@@ -11,7 +11,6 @@ export const ButtonLinkWhatsApp = (props) => {
 
   const { message = defaultMessage, title = defaultTitle } = props;
 
-  console.log(message);
   let whatsappLink = `https://wa.me/525656401126?text=${encodeURIComponent(
     message
   )}`;

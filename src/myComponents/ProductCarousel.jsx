@@ -25,21 +25,23 @@ export const ProductCarousel = () => {
     }
   };
   return (
-    <section className="text-center my-6">
-      <header className="text-start laptop:flex laptop:flex-col laptop:justify-center laptop:items-center">
-        <div className="px-5">
-          <h2 className=" text-[2rem] font-semibold tracking-tight leading-none laptop:text-5xl">
-            Nuestros productos más vendidos
-          </h2>
-          <h4 className="text-[1.1rem] text-gray-700">
-            Descubre la calidad y precios top.
-          </h4>
-        </div>
+    <section className="text-center my-4">
+      <header className="text-start laptop:w-[80%] m-auto px-5 laptop:p-0">
+        <h2 className=" text-[2rem] font-semibold tracking-tight leading-none laptop:text-[3.5rem]">
+          Nuestros productos más vendidos
+        </h2>
+        {/* <h2 className=" text-[2rem] font-semibold tracking-tight leading-none laptop:text-[3.5rem]">
+          Descubre por qué somos el mejor lugar para comprar tus productos
+          electrónicos.
+        </h2> */}
+        <h4 className="text-[1.1rem] text-gray-700 laptop:text-[1.5rem]">
+          Descubre la calidad y precios top.
+        </h4>
       </header>
 
       <article
         ref={carouselRef}
-        className="carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 overflow-y-hidden pl-[.5rem] laptop:pl-[12rem] m-2 p-6"
+        className="carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 overflow-y-hidden pl-[.5rem] laptop:pl-[9rem] m-2 p-6"
       >
         {products.map((product) => (
           <CardProduct key={product.name} productData={product} />
