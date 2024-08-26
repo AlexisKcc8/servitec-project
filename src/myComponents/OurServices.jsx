@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { ourServices } from "@/data/dataInfo";
 import { useState } from "react";
+import { ContainerCenter } from "./ContainerCenter";
 const INITIAL_STATE_IMAGE_DESKTOP = {
   imagenAvifDesktop:
     "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.avif",
@@ -29,10 +30,7 @@ export const OurServices = () => {
   };
 
   return (
-    <section
-      id="our-services"
-      className="px-5 laptop:w-[80%] m-auto laptop:p-0 my-6"
-    >
+    <ContainerCenter idSection="our-services">
       <header className="mb-6">
         <h2 className="text-[2rem] font-semibold tracking-tight leading-none laptop:text-[3.5rem]">
           Nuestros servicios tecnológicos
@@ -64,7 +62,7 @@ export const OurServices = () => {
                     {service.name}
                   </AccordionTrigger>
                   <AccordionContent className="text-left">
-                    <p className="text-[1.1rem]">{service.description}</p>
+                    <p className="text-[1.1rem] mb-4">{service.description}</p>
                     <picture className="w-full h-full overflow-hidden laptop:hidden">
                       <source
                         className="w-full h-full object-cover"
@@ -107,6 +105,6 @@ export const OurServices = () => {
           </picture>
         </section>
       </article>
-    </section>
+    </ContainerCenter>
   );
 };

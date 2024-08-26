@@ -25,7 +25,7 @@ export const ProductCarousel = () => {
     }
   };
   return (
-    <section className="text-center my-4">
+    <section className="border border-blue-700 text-center my-4">
       <header className="text-start laptop:w-[80%] m-auto px-5 laptop:p-0">
         <h2 className=" text-[2rem] font-semibold tracking-tight leading-none laptop:text-[3.5rem]">
           Nuestros productos más vendidos

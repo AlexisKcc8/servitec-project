@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { purchaseMethod } from "@/data/dataInfo";
 import { StoreSvg } from "./icons/StoreSvg";
+import { ContainerCenter } from "./ContainerCenter";
 
 export const PurchaseMethod = () => {
   return (
-    <section className="px-5 laptop:p-0 m-auto laptop:w-[80%] laptop:pt-0">
+    <ContainerCenter>
       <h2 className="text-[2rem] font-semibold tracking-tight leading-none laptop:text-[3.5rem]">
         Nuestro método de compra.
       </h2>
@@ -51,6 +52,6 @@ export const PurchaseMethod = () => {
           </p>
         </aside>
       </section>
-    </section>
+    </ContainerCenter>
   );
 };
