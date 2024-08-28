@@ -7,7 +7,7 @@ import { ContainerCenter } from "./ContainerCenter";
 
 export const Hero = () => {
   return (
-    <ContainerCenter className="flex flex-col justify-center items-center py-[2rem] rounded-2xl relative overflow-hidden gap-6 text-center mt-12 laptop:mt-16">
+    <ContainerCenter className="flex flex-col justify-center items-center py-[2rem] rounded-2xl relative overflow-hidden gap-6 text-center laptop:mt-16">
       <WaveScene />
       <div className="z-10 flex font-bold">
         <p className="z-10 bg-servitect-800 text-white py-2 px-5 rounded-2xl">

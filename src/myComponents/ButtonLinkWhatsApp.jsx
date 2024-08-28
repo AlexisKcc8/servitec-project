@@ -1,4 +1,5 @@
 import { WhatsApp } from "./icons/WhatsApp";
+import PropTypes from "prop-types";
 
 export const ButtonLinkWhatsApp = (props) => {
   const defaultMessage = `¡Hola! 👋 Me gustaría solicitar sus servicios de mantenimiento para equipos de cómputo y celulares.
@@ -26,4 +27,8 @@ export const ButtonLinkWhatsApp = (props) => {
       {title}
     </a>
   );
+};
+ButtonLinkWhatsApp.propTypes = {
+  message: PropTypes.string,
+  title: PropTypes.string,
 };

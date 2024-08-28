@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 export const ContainerCenter = (props) => {
   const { idSection, className, children } = props;
   return (
@@ -8,4 +9,9 @@ export const ContainerCenter = (props) => {
       {children}
     </section>
   );
+};
+ContainerCenter.propTypes = {
+  idSection: PropTypes.string,
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
