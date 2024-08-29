@@ -2,6 +2,7 @@ import { products } from "@/data/dataProducts";
 import { CardProduct } from "./CardProduct";
 import { useRef } from "react";
 import { MyCarousel } from "./MyCarousel";
+import { AppleStyleProductCard } from "./AppleStyleProductCard";
 export const ProductCarousel = () => {
   const productsCarouselRef = useRef(null);
 
@@ -25,7 +26,7 @@ export const ProductCarousel = () => {
           </p>
         </div>
         {products.map((product) => (
-          <CardProduct key={product.name} productData={product} />
+          <AppleStyleProductCard key={product.name} productData={product} />
         ))}
       </MyCarousel>
     </section>

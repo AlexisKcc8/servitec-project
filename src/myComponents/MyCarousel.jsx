@@ -27,7 +27,7 @@ export const MyCarousel = (props) => {
     <>
       <article
         ref={carouselRef}
-        className={`carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 overflow-y-hidden pl-[.5rem] laptop:pl-[9rem] m-2 p-6 ${classNameCarousel}`}
+        className={`carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 overflow-y-hidden pl-[.5rem] laptop:pl-[8.5rem] m-2 p-6 ${classNameCarousel}`}
       >
         {children}
       </article>

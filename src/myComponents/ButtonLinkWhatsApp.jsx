@@ -21,9 +21,8 @@ export const ButtonLinkWhatsApp = (props) => {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-servitect-800 w-[100%] flex justify-center items-center p-2 rounded-2xl text-white font-semibold"
+      className="flex justify-center items-center bg-black hover:bg-gray-800 text-white rounded-full px-8 py-2 font-medium transition-all duration-300 ease-in-out transform hover:shadow-lg"
     >
-      <WhatsApp />
       {title}
     </a>
   );
