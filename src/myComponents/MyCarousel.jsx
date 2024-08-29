@@ -55,13 +55,11 @@ export const MyCarousel = (props) => {
 // Definición de las propTypes MyCarousel
 MyCarousel.propTypes = {
   children: PropTypes.node.isRequired, // `children` puede ser cualquier cosa que React pueda renderizar (elementos, string, números, etc.)
-  carouselRef: PropTypes.oneOfType(
-    [
-      // `carouselRef` puede ser un objeto ref o una función
-      PropTypes.func,
-      PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
-    ].isRequired
-  ),
+  // carouselRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  carouselRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  ]),
   classNameCarousel: PropTypes.string, // `classNameCarousel` debe ser una cadena de texto (clase CSS)
   classNameButtons: PropTypes.string, // `classNameButtons` debe ser una cadena de texto (clase CSS)
 };

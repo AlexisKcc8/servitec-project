@@ -11,7 +11,7 @@ export const CardProduct = (props) => {
   let message = `Hola👋, me gustaria adquirir el producto: ${name} ${imageUrl} `;
 
   return (
-    <article className="card-product ease-in duration-300 w-[18rem] text-center p-0 flex flex-col snap-center flex-shrink-0 rounded-lg border border-servitect-700 overflow-hidden hover:cursor-pointer hover:scale-[1.03] hover:ease-in">
+    <article className="card-product  ease-in duration-300 w-[20rem] text-center p-0 flex flex-col snap-center flex-shrink-0 rounded-lg border border-servitect-700 overflow-hidden hover:cursor-pointer hover:scale-[1.03] hover:ease-in">
       <header className="w-[100%] h-[60%] overflow-hidden">
         <img className="w-[100%] h-full" src={image} alt={`image-${name}`} />
       </header>

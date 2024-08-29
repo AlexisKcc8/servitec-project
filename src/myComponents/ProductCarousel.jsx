@@ -11,16 +11,19 @@ export const ProductCarousel = () => {
         <h2 className=" text-[2rem] font-semibold tracking-tight leading-none laptop:text-[3.5rem]">
           Nuestros productos más vendidos
         </h2>
-        {/* <h2 className=" text-[2rem] font-semibold tracking-tight leading-none laptop:text-[3.5rem]">
-          Descubre por qué somos el mejor lugar para comprar tus productos
-          electrónicos.
-        </h2> */}
         <h4 className="text-[1.1rem] text-gray-700 laptop:text-[1.5rem]">
-          Descubre la calidad y precios top.
+          Adquiere calidad a precios top.
         </h4>
       </header>
 
       <MyCarousel carouselRef={productsCarouselRef}>
+        <div className="card-product product-cover  ease-in duration-300 w-[20rem] text-start p-4 flex flex-col snap-center flex-shrink-0 rounded-lg border border-servitect-700 overflow-hidden hover:cursor-pointer hover:scale-[1.03] hover:ease-in">
+          <h2 className="font-semibold text-3xl mt-4">Ponte a la moda</h2>
+          <p className="text-lg tracking-wide">
+            Descubre los nuevos colores y funcionalidades de tus accesorios
+            favoritos.
+          </p>
+        </div>
         {products.map((product) => (
           <CardProduct key={product.name} productData={product} />
         ))}

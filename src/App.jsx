@@ -3,6 +3,7 @@ import { BannerBrand } from "@/myComponents/BannerBrand";
 import { ProductCarousel } from "@/myComponents/ProductCarousel";
 import { PurchaseMethod } from "@/myComponents/PurchaseMethod";
 import { OurServices } from "@/myComponents/OurServices";
+import { IncentivesCarousel } from "@/myComponents/IncentivesCarousel";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <ProductCarousel />
         <PurchaseMethod />
         <OurServices />
+        <IncentivesCarousel />
         <br />
         <br />
         <br />

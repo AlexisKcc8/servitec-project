@@ -109,6 +109,13 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.37);
 }
 
+.product-cover {
+  background-image: url("/imgs/store-card-40-accessories-202405.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
 
 @layer base {
   * {
