@@ -3,15 +3,14 @@ import { Button } from "@/components/ui/button";
 import PropTypes from "prop-types";
 import { ChevronRight } from "lucide-react";
 import { ButtonLinkWhatsApp } from "./ButtonLinkWhatsApp";
+import { useContext } from "react";
+import { ModalContext } from "@/context/ModalContext";
 import {
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { useContext } from "react";
-import { ModalContext } from "@/context/ModalContext";
-
 export const AppleStyleProductCard = (props) => {
   const { productData } = props;
   const { id, image, name, titleImg, description, price } = productData;
@@ -20,7 +19,7 @@ export const AppleStyleProductCard = (props) => {
 
   const imageUrl = `${window.location.origin}/imgs/products/${titleImg}`; // URL de la imagen en la carpeta public
 
-  let message = `Hola👋, me gustaria adquirir el producto: ${name} ${imageUrl} `;
+  let message = `Hola👋, me gustaria adquirir el siguiente producto: ${name} ${imageUrl} `;
   return (
     <Card className=" max-w-sm mx-auto overflow-hidden bg-[#FAFAFA] rounded-2xl shadow-lg card-product  ease-in duration-300 w-[20rem] text-center p-0 flex flex-col snap-center flex-shrink-0  border border-servitect-700  hover:cursor-pointer hover:scale-[1.03] hover:ease-in">
       <CardContent className="py-6 px-2">
@@ -28,9 +27,6 @@ export const AppleStyleProductCard = (props) => {
           <h2 className="font-bold text-2xl mb-2 tracking-tight overflow-hidden text-ellipsis whitespace-pre-line line-clamp-1">
             {name}
           </h2>
-          {/* <p className="text-base text-muted-foreground font-medium overflow-hidden text-ellipsis whitespace-pre-line line-clamp-1">
-            {description}
-          </p> */}
         </div>
 
         <div className="aspect-square relative mb-8 ">
@@ -59,6 +55,28 @@ export const AppleStyleProductCard = (props) => {
           >
             Saber más <ChevronRight className="ml-1 h-4 w-4" />
           </Button>
+
+          <DialogContent className="laptop:flex ">
+            <aside className="">
+              <img src={image} alt="" />
+            </aside>
+            <aside>
+              <DialogHeader>
+                <DialogTitle className="font-bold text-3xl  ">
+                  {name}
+                </DialogTitle>
+                <p className="font-semibold text-2xl my-2">
+                  Desde{" "}
+                  <span className="text-servitect-main text-3xl font-bold">
+                    ${price.toFixed(2)}
+                  </span>
+                </p>
+              </DialogHeader>
+              <DialogDescription className="text-xl">
+                {description}
+              </DialogDescription>
+            </aside>
+          </DialogContent>
         </div>
       </CardContent>
       <div className="absolute top-4 right-4">
@@ -69,6 +87,7 @@ export const AppleStyleProductCard = (props) => {
 };
 AppleStyleProductCard.propTypes = {
   productData: PropTypes.object.isRequired,
+  id: PropTypes.string,
   image: PropTypes.string,
   name: PropTypes.string,
   titleImg: PropTypes.string,

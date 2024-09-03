@@ -2,12 +2,7 @@ import { products } from "@/data/dataProducts";
 import { useRef } from "react";
 import { MyCarousel } from "@/myComponents/MyCarousel";
 import { AppleStyleProductCard } from "@/myComponents/AppleStyleProductCard";
-import {
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+
 import { DialogModal } from "@/myComponents/DialogModal";
 
 export const ProductCarousel = () => {
@@ -35,15 +30,6 @@ export const ProductCarousel = () => {
         {products.map((product) => (
           <DialogModal key={product.id} id={product.id}>
             <AppleStyleProductCard productData={product} />
-            <DialogContent>
-              <DialogHeader>
-                <DialogTitle className="flex items-center gap-2">
-                  {/* <incentive.icon className="h-6 w-6 text-primary" /> */}
-                  ejemplo
-                </DialogTitle>
-              </DialogHeader>
-              <DialogDescription>ejemplo description</DialogDescription>
-            </DialogContent>
           </DialogModal>
         ))}
       </MyCarousel>
