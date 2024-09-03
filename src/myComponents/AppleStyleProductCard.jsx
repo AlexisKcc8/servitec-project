@@ -3,10 +3,20 @@ import { Button } from "@/components/ui/button";
 import PropTypes from "prop-types";
 import { ChevronRight } from "lucide-react";
 import { ButtonLinkWhatsApp } from "./ButtonLinkWhatsApp";
+import {
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { useContext } from "react";
+import { ModalContext } from "@/context/ModalContext";
 
 export const AppleStyleProductCard = (props) => {
   const { productData } = props;
-  const { image, name, titleImg, description, price } = productData;
+  const { id, image, name, titleImg, description, price } = productData;
+
+  const { setDialoglId } = useContext(ModalContext);
 
   const imageUrl = `${window.location.origin}/imgs/products/${titleImg}`; // URL de la imagen en la carpeta public
 
@@ -42,9 +52,9 @@ export const AppleStyleProductCard = (props) => {
           <div className="w-16 h-1 bg-gradient-to-r from-gray-200 to-gray-300 rounded-full"></div>
 
           <ButtonLinkWhatsApp message={message} title="Adquirir" />
-
           <Button
             variant="link"
+            onClick={() => setDialoglId(id)}
             className="text-blue-500 hover:text-blue-600 font-medium"
           >
             Saber más <ChevronRight className="ml-1 h-4 w-4" />

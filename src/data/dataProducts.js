@@ -1,5 +1,6 @@
 export const products = [
   {
+    id: crypto.randomUUID(),
     image: "/imgs/products/Funda_iPhone_11_Pro.jpeg",
     name: "Funda iPhone 11 Pro",
     description: "Silicone Case",
@@ -7,6 +8,7 @@ export const products = [
     price: 170,
   },
   {
+    id: crypto.randomUUID(),
     image: "/imgs/products/Funda_iPhone_14.jpeg",
     name: "Funda iPhone 14",
     titleImg: "Funda_iPhone_14.jpeg",
@@ -14,6 +16,7 @@ export const products = [
     price: 170,
   },
   {
+    id: crypto.randomUUID(),
     image: "/imgs/products/Battery_Pack_Samsung.jpeg",
     name: "Battery Pack - Samsung",
     titleImg: "Battery_Pack_Samsung.jpeg",
@@ -22,6 +25,7 @@ export const products = [
     price: 300,
   },
   {
+    id: crypto.randomUUID(),
     image: "/imgs/products/Battery_Pack_Moreka.jpeg",
     name: "Battery Pack - Moreka",
     titleImg: "Battery_Pack_Samsung.jpeg",
@@ -29,6 +33,7 @@ export const products = [
     price: 380,
   },
   {
+    id: crypto.randomUUID(),
     image: "/imgs/products/Battery_Pack_Moreka.jpeg",
     name: "Battery Pack - Moreka1",
     titleImg: "Battery_Pack_Samsung.jpeg",
@@ -36,6 +41,7 @@ export const products = [
     price: 380,
   },
   {
+    id: crypto.randomUUID(),
     image: "/imgs/products/Battery_Pack_Moreka.jpeg",
     name: "Battery Pack - Moreka2",
     titleImg: "Battery_Pack_Samsung.jpeg",
@@ -43,6 +49,7 @@ export const products = [
     price: 380,
   },
   {
+    id: crypto.randomUUID(),
     image: "/imgs/products/Battery_Pack_Moreka.jpeg",
     name: "Battery Pack - Moreka3",
     titleImg: "Battery_Pack_Samsung.jpeg",

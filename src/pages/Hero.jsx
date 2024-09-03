@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 import { StoreSvg } from "@/myComponents/icons/StoreSvg";
 import { ArrowDown } from "@/myComponents/icons/ArrowDown";
-import { ContainerCenter } from "./ContainerCenter";
+import { ContainerCenter } from "@/myComponents/ContainerCenter";
 
 export const Hero = () => {
   return (

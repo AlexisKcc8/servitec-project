@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { purchaseMethod } from "@/data/dataInfo";
-import { StoreSvg } from "./icons/StoreSvg";
-import { ContainerCenter } from "./ContainerCenter";
+import { StoreSvg } from "@/myComponents/icons/StoreSvg";
+import { ContainerCenter } from "@/myComponents/ContainerCenter";
 
 export const PurchaseMethod = () => {
   return (
@@ -20,13 +20,13 @@ export const PurchaseMethod = () => {
             <div className="w-[3px] absolute left-[29px] top-[12px] h-[90%] -z-10 bg-servitect-800"></div>
 
             {purchaseMethod !== null
-              ? purchaseMethod.map((item) => (
+              ? purchaseMethod.map((item, index) => (
                   <div
                     key={item.id}
                     className="flex items-center text-lg gap-4"
                   >
                     <div className="rounded-full h-7 w-7 min-h-7 min-w-7 text-[18px] font-black flex items-center justify-center bg-servitect-900 text-white">
-                      {item.id}
+                      {index + 1}
                     </div>
                     <span className="text-gray-700 font-semibold leading-none text-[20px]">
                       {item.text}

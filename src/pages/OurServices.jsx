@@ -6,13 +6,15 @@ import {
 } from "@/components/ui/accordion";
 import { ourServices } from "@/data/dataInfo";
 import { useState } from "react";
-import { ContainerCenter } from "./ContainerCenter";
+import { ContainerCenter } from "@/myComponents/ContainerCenter";
+
 const INITIAL_STATE_IMAGE_DESKTOP = {
   imagenAvifDesktop:
     "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.avif",
   imagenWebpDesktop:
     "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.webp",
 };
+
 export const OurServices = () => {
   const [imageDesktopCurrent, setImageDesktopCurrent] = useState(
     INITIAL_STATE_IMAGE_DESKTOP
@@ -49,7 +51,7 @@ export const OurServices = () => {
           {ourServices !== null
             ? ourServices.map((service, index) => (
                 <AccordionItem
-                  key={service.name}
+                  key={service.id}
                   className={`p-6 laptop:py-2 laptop:px-6 ${
                     index == ourServices.length - 1 ? "border-none" : ""
                   } `}

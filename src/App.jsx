@@ -1,9 +1,9 @@
-import { Hero } from "@/myComponents/Hero";
+import { Hero } from "@/pages/Hero";
 import { BannerBrand } from "@/myComponents/BannerBrand";
-import { ProductCarousel } from "@/myComponents/ProductCarousel";
-import { PurchaseMethod } from "@/myComponents/PurchaseMethod";
-import { OurServices } from "@/myComponents/OurServices";
-import { IncentivesCarousel } from "@/myComponents/IncentivesCarousel";
+import { ProductCarousel } from "@/pages/ProductCarousel";
+import { PurchaseMethod } from "@/pages/PurchaseMethod";
+import { OurServices } from "@/pages/OurServices";
+import { IncentivesCarousel } from "@/pages/IncentivesCarousel";
 
 function App() {
   return (
