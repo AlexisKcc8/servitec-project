@@ -1,14 +1,7 @@
 import { useRef } from "react";
 import { MyCarousel } from "@/myComponents/MyCarousel";
 import { incentives } from "@/data/dataInfo";
-import { DialogModal } from "@/myComponents/DialogModal";
 import { CardIncentive } from "@/myComponents/CardIncentive";
-import {
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 
 export const IncentivesCarousel = () => {
   const incentivesCarouselRef = useRef(null);
@@ -26,19 +19,7 @@ export const IncentivesCarousel = () => {
         <ul className="flex gap-4">
           {incentives.map((incentive) => (
             <li key={incentive.title}>
-              <DialogModal id={incentive.id}>
-                <CardIncentive incentive={incentive} />
-
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle className="flex items-center gap-2">
-                      <incentive.icon className="h-6 w-6 text-primary" />
-                      {incentive.title}
-                    </DialogTitle>
-                  </DialogHeader>
-                  <DialogDescription>{incentive.description}</DialogDescription>
-                </DialogContent>
-              </DialogModal>
+              <CardIncentive incentive={incentive} />
             </li>
           ))}
         </ul>

@@ -1,22 +1,16 @@
 import { Dialog } from "@/components/ui/dialog";
 import { ModalContext } from "@/context/ModalContext";
 
-import PropTypes from "prop-types";
 import { useContext } from "react";
 
-export const DialogModal = (props) => {
-  const { children, id } = props;
-  const { handleDialog, openModalId } = useContext(ModalContext);
+export const DialogModal = () => {
+  const { isOpen, modalContent, closeModal } = useContext(ModalContext);
+
+  if (!isOpen || !modalContent) return null; // No renderizar si el modal no está abierto
+
   return (
-    <Dialog
-      open={openModalId === id}
-      onOpenChange={(isOpen) => handleDialog(isOpen, id)}
-    >
-      {children}
+    <Dialog open={isOpen} onOpenChange={closeModal}>
+      {modalContent} {/* Aquí se renderiza el contenido dinámico */}
     </Dialog>
   );
-};
-DialogModal.propTypes = {
-  id: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
 };

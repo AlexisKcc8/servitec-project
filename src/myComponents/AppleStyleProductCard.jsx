@@ -13,9 +13,8 @@ import {
 } from "@/components/ui/dialog";
 export const AppleStyleProductCard = (props) => {
   const { productData } = props;
-  const { id, image, name, titleImg, description, price } = productData;
-
-  const { setDialoglId } = useContext(ModalContext);
+  const { image, name, titleImg, description, price } = productData;
+  const { openModal } = useContext(ModalContext);
 
   const imageUrl = `${window.location.origin}/imgs/products/${titleImg}`; // URL de la imagen en la carpeta public
 
@@ -50,33 +49,35 @@ export const AppleStyleProductCard = (props) => {
           <ButtonLinkWhatsApp message={message} title="Adquirir" />
           <Button
             variant="link"
-            onClick={() => setDialoglId(id)}
+            onClick={() =>
+              openModal(
+                <DialogContent className="laptop:flex ">
+                  <aside className="">
+                    <img src={image} alt="" />
+                  </aside>
+                  <aside>
+                    <DialogHeader>
+                      <DialogTitle className="font-bold text-3xl  ">
+                        {name}
+                      </DialogTitle>
+                      <p className="font-semibold text-2xl my-2">
+                        Desde{" "}
+                        <span className="text-servitect-main text-3xl font-bold">
+                          ${price.toFixed(2)}
+                        </span>
+                      </p>
+                    </DialogHeader>
+                    <DialogDescription className="text-xl">
+                      {description}
+                    </DialogDescription>
+                  </aside>
+                </DialogContent>
+              )
+            }
             className="text-blue-500 hover:text-blue-600 font-medium"
           >
             Saber más <ChevronRight className="ml-1 h-4 w-4" />
           </Button>
-
-          <DialogContent className="laptop:flex ">
-            <aside className="">
-              <img src={image} alt="" />
-            </aside>
-            <aside>
-              <DialogHeader>
-                <DialogTitle className="font-bold text-3xl  ">
-                  {name}
-                </DialogTitle>
-                <p className="font-semibold text-2xl my-2">
-                  Desde{" "}
-                  <span className="text-servitect-main text-3xl font-bold">
-                    ${price.toFixed(2)}
-                  </span>
-                </p>
-              </DialogHeader>
-              <DialogDescription className="text-xl">
-                {description}
-              </DialogDescription>
-            </aside>
-          </DialogContent>
         </div>
       </CardContent>
       <div className="absolute top-4 right-4">

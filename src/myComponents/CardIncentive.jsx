@@ -6,6 +6,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { ModalContext } from "@/context/ModalContext";
 import { Plus } from "lucide-react";
 import { useContext } from "react";
@@ -13,14 +19,26 @@ import PropTypes from "prop-types";
 
 export const CardIncentive = (props) => {
   const { incentive } = props;
-  const { id, title, description } = incentive;
+  const { title, description } = incentive;
 
-  const { setDialoglId } = useContext(ModalContext);
+  const { openModal } = useContext(ModalContext);
 
   return (
     <Card
       className="flex flex-col cursor-pointer hover:shadow-lg transition-shadow duration-300  w-[23rem] h-[22rem] text-start  snap-center flex-shrink-0 rounded-2xl border-none p-0"
-      onClick={() => setDialoglId(id)}
+      onClick={() =>
+        openModal(
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle className="flex items-center gap-2">
+                <incentive.icon className="h-6 w-6 text-primary" />
+                {incentive.title}
+              </DialogTitle>
+            </DialogHeader>
+            <DialogDescription>{incentive.description}</DialogDescription>
+          </DialogContent>
+        )
+      }
     >
       <CardHeader>
         <CardTitle className="flex flex-col items-start justify-center gap-2">

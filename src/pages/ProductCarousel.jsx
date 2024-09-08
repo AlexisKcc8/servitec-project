@@ -3,8 +3,6 @@ import { useRef } from "react";
 import { MyCarousel } from "@/myComponents/MyCarousel";
 import { AppleStyleProductCard } from "@/myComponents/AppleStyleProductCard";
 
-import { DialogModal } from "@/myComponents/DialogModal";
-
 export const ProductCarousel = () => {
   const productsCarouselRef = useRef(null);
 
@@ -28,9 +26,7 @@ export const ProductCarousel = () => {
           </p>
         </div>
         {products.map((product) => (
-          <DialogModal key={product.id} id={product.id}>
-            <AppleStyleProductCard productData={product} />
-          </DialogModal>
+          <AppleStyleProductCard key={product.id} productData={product} />
         ))}
       </MyCarousel>
     </section>
