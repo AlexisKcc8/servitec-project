@@ -19,7 +19,7 @@ import PropTypes from "prop-types";
 
 export const CardIncentive = (props) => {
   const { incentive } = props;
-  const { title, description } = incentive;
+  const { title, description, titleModal, descriptionModal } = incentive;
 
   const { openModal } = useContext(ModalContext);
 
@@ -28,14 +28,16 @@ export const CardIncentive = (props) => {
       className="flex flex-col cursor-pointer hover:shadow-lg transition-shadow duration-300  w-[23rem] h-[22rem] text-start  snap-center flex-shrink-0 rounded-2xl border-none p-0"
       onClick={() =>
         openModal(
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle className="flex items-center gap-2">
-                <incentive.icon className="h-6 w-6 text-primary" />
-                {incentive.title}
+          <DialogContent className="overflow-hidden flex flex-col justify-start items-start h-[100vh] mt-14 pt-12 laptop:w-[50rem] laptop:h-[auto] laptop:p-12">
+            <DialogHeader className="text-start flex flex-row justify-center items-center ">
+              <incentive.icon className="h-16 w-24 text-primary m-0 p-0" />
+              <DialogTitle className="text-[3rem] leading-[2.9rem]  laptop:text-[4.5rem] laptop:leading-[4.8rem] ml-4">
+                {titleModal}
               </DialogTitle>
             </DialogHeader>
-            <DialogDescription>{incentive.description}</DialogDescription>
+            <DialogDescription className="text-[1.2rem] text-black">
+              {descriptionModal}
+            </DialogDescription>
           </DialogContent>
         )
       }

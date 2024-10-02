@@ -211,73 +211,113 @@ export const ourServices = [
 
 export const incentives = [
   {
-    id: crypto.randomUUID(),
-    title: "Calidad garantizada en cada compra",
+    id: "crypto.randomUUID()",
+    title: "Calidad garantizada en cada compra.",
     description:
       "Disfruta de la tranquilidad de saber que cada producto ha sido cuidadosamente seleccionado para ofrecerte lo mejor en tecnología.",
     icon: CircleCheckBig,
+    titleModal: "Productos con excelencia asegurada.",
+    descriptionModal:
+      "Confía en nuestra selección de productos premium que cumplen con los más altos estándares de calidad, brindándote confianza en cada compra.",
+    modalTitle: "Explora la calidad de tus productos.",
   },
   {
-    id: crypto.randomUUID(),
-    title: "Asesoría experta y personalizada",
+    id: "crypto.randomUUID()",
+    title: "Asesoría experta y personalizada.",
     description:
       "Nuestro equipo de especialistas está aquí para guiarte en cada paso, asegurando que encuentres el producto ideal para tus necesidades.",
     icon: UserCheck,
+    titleModal: "Guía experta a tu disposición.",
+    descriptionModal:
+      "Nuestro equipo especializado te acompaña en cada elección, garantizando que encuentres lo que realmente necesitas.",
+    modalTitle: "Consulta con nuestros expertos.",
   },
   {
-    id: crypto.randomUUID(),
-    title: "Tecnología de vanguardia a tu alcance",
+    id: "crypto.randomUUID()",
+    title: "Tecnología de vanguardia a tu alcance.",
     description:
       "Accede a las últimas innovaciones en el mundo de la electrónica, todo en un solo lugar y a precios que no podrás resistir.",
     icon: Cpu,
+    titleModal: "Innovación tecnológica al mejor precio.",
+    descriptionModal:
+      "Explora lo último en tecnología de punta con opciones accesibles que te mantienen al día con las tendencias más recientes.",
+    modalTitle: "Descubre la mejor tecnología disponible.",
   },
   {
-    id: crypto.randomUUID(),
-    title: "Precios que se ajustan a tu bolsillo",
+    id: "crypto.randomUUID()",
+    title: "Precios que se ajustan a tu bolsillo.",
     description:
       "Descubre nuestras ofertas y promociones que hacen que la tecnología de alta calidad sea accesible para todos.",
     icon: Tag,
+    titleModal: "Descuentos pensados para ti.",
+    descriptionModal:
+      "Aprovecha precios que se adaptan a tu presupuesto sin sacrificar la calidad que mereces.",
+    modalTitle: "Encuentra precios que te sorprenderán.",
   },
   {
-    id: crypto.randomUUID(),
-    title: "Compra con confianza y seguridad",
+    id: "crypto.randomUUID()",
+    title: "Compra con confianza y seguridad.",
     description:
       "Nuestra plataforma está diseñada para brindarte una experiencia de compra segura, con opciones de pago flexibles y protección de tus datos.",
     icon: ShieldCheck,
+    titleModal: "Protección total en cada transacción.",
+    descriptionModal:
+      "Compra tranquilo sabiendo que tus datos y pagos están resguardados con nuestros altos estándares de seguridad.",
+    modalTitle: "Confianza y seguridad en cada compra.",
   },
   {
-    id: crypto.randomUUID(),
-    title: "Envíos rápidos y confiables",
+    id: "crypto.randomUUID()",
+    title: "Envíos rápidos y confiables.",
     description:
       "Sabemos que no puedes esperar para disfrutar de tus nuevos productos, por eso nos aseguramos de que lleguen a tus manos en el menor tiempo posible.",
     icon: Truck,
+    titleModal: "Entrega veloz y segura",
+    descriptionModal:
+      "Obtén tus productos en tiempo récord con nuestro servicio de envío eficiente y fiable, porque sabemos que lo urgente no puede esperar.",
+    modalTitle: "Entrega rápida y confiable.",
   },
   {
-    id: crypto.randomUUID(),
-    title: "Atención al cliente que supera tus expectativas",
+    id: "crypto.randomUUID()",
+    title: "Atención al cliente que supera tus expectativas.",
     description:
       "Estamos disponibles para resolver tus dudas y asistirte en cualquier momento, porque tu satisfacción es nuestra misión principal.",
     icon: Headset,
+    titleModal: "Soporte que siempre está a tu lado.",
+    descriptionModal:
+      "Resolvemos todas tus inquietudes con rapidez y eficacia, porque tu comodidad es nuestra prioridad.",
+    modalTitle: "Atención al cliente excepcional.",
   },
   {
-    id: crypto.randomUUID(),
+    id: "crypto.randomUUID()",
     title: "Amplia variedad para todos los gustos",
     description:
       "Desde los gadgets más populares hasta los accesorios más específicos, nuestra selección cubre todas tus necesidades tecnológicas.",
     icon: Grid2x2Check,
+    titleModal: "Diversidad tecnológica sin igual",
+    descriptionModal:
+      "Encuentra todo lo que buscas, desde lo más común hasta lo más exclusivo, en nuestra extensa colección de tecnología.",
+    modalTitle: "Elige entre una amplia variedad de productos",
   },
   {
-    id: crypto.randomUUID(),
+    id: "crypto.randomUUID()",
     title: "Una experiencia de compra fluida y sin complicaciones",
     description:
       "Hemos simplificado cada paso para que puedas encontrar, comparar y comprar tus productos electrónicos de manera rápida y sencilla.",
     icon: ShoppingCart,
+    titleModal: "Compra sin estrés",
+    descriptionModal:
+      "Disfruta de un proceso de compra optimizado para que encuentres lo que buscas con facilidad y sin contratiempos.",
+    modalTitle: "Compra de manera fácil y rápida",
   },
   {
-    id: crypto.randomUUID(),
+    id: "crypto.randomUUID()",
     title: "Garantía de satisfacción total",
     description:
       "Queremos que estés completamente feliz con tu compra, por eso ofrecemos políticas de devolución y cambios que te respaldan en todo momento.",
     icon: Smile,
+    titleModal: "Tu felicidad, nuestra prioridad",
+    descriptionModal:
+      "Si algo no sale como esperabas, nuestra política de satisfacción te asegura soluciones rápidas y sin complicaciones.",
+    modalTitle: "Garantía total de satisfacción.",
   },
 ];
