@@ -47,17 +47,22 @@ export const AppleStyleProductCard = (props) => {
           <div className="w-16 h-1 bg-gradient-to-r from-gray-200 to-gray-300 rounded-full"></div>
 
           <ButtonLinkWhatsApp message={message} title="Adquirir" />
+
           <Button
             variant="link"
             onClick={() =>
               openModal(
-                <DialogContent className="laptop:flex ">
-                  <aside className="">
-                    <img src={image} alt="" />
+                <DialogContent className="flex flex-col laptop:flex-row laptop:h-[80vh]">
+                  <aside className="laptop:w-[50%] aspect-square ">
+                    <img
+                      className="object-cover w-full h-full"
+                      src={image}
+                      alt=""
+                    />
                   </aside>
-                  <aside>
+                  <aside className="laptop:w-[50%] gap-4 flex flex-col justify-center items-center">
                     <DialogHeader>
-                      <DialogTitle className="font-bold text-3xl  ">
+                      <DialogTitle className="font-bold text-5xl ">
                         {name}
                       </DialogTitle>
                       <p className="font-semibold text-2xl my-2">
@@ -67,9 +72,10 @@ export const AppleStyleProductCard = (props) => {
                         </span>
                       </p>
                     </DialogHeader>
-                    <DialogDescription className="text-xl">
+                    <DialogDescription className="text-2xl text-center">
                       {description}
                     </DialogDescription>
+                    <ButtonLinkWhatsApp message={message} title="Adquirir" />
                   </aside>
                 </DialogContent>
               )
