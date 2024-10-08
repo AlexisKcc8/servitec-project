@@ -5,6 +5,7 @@ import { PurchaseMethod } from "@/pages/PurchaseMethod";
 import { OurServices } from "@/pages/OurServices";
 import { DialogModal } from "@/myComponents/DialogModal";
 import { IncentivesCarousel } from "@/pages/IncentivesCarousel";
+import { BannerMagSafe } from "@/myComponents/BannerMagSafe";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <PurchaseMethod />
         <IncentivesCarousel />
         <OurServices />
-
+        <BannerMagSafe />
         {/* //modal generico para las cards o componentes que lo necesiten */}
         <DialogModal />
         <br />

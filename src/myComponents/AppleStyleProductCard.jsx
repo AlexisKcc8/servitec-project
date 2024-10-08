@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import PropTypes from "prop-types";
 import { ChevronRight } from "lucide-react";
 import { ButtonLinkWhatsApp } from "./ButtonLinkWhatsApp";
-import { useContext } from "react";
+import { useContext, memo } from "react";
 import { ModalContext } from "@/context/ModalContext";
 import {
   DialogContent,
@@ -11,16 +11,18 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-export const AppleStyleProductCard = (props) => {
+
+export const AppleStyleProductCard = memo((props) => {
   const { productData } = props;
   const { image, name, titleImg, description, price } = productData;
   const { openModal } = useContext(ModalContext);
 
   const imageUrl = `${window.location.origin}/imgs/products/${titleImg}`; // URL de la imagen en la carpeta public
 
-  let message = `Hola👋, me gustaria adquirir el siguiente producto: ${name} ${imageUrl} `;
+  let message = `Hola👋, me gustaría adquirir el siguiente producto: ${name} ${imageUrl}`;
+
   return (
-    <Card className=" max-w-sm mx-auto overflow-hidden bg-[#FAFAFA] rounded-2xl shadow-lg card-product  ease-in duration-300 w-[20rem] text-center p-0 flex flex-col snap-center flex-shrink-0  border border-servitect-700  hover:cursor-pointer hover:scale-[1.03] hover:ease-in">
+    <Card className="max-w-sm mx-auto overflow-hidden bg-[#FAFAFA] rounded-2xl shadow-lg card-product ease-in duration-300 w-[20rem] text-center p-0 flex flex-col snap-center flex-shrink-0 border border-servitect-700 hover:cursor-pointer hover:scale-[1.03] hover:ease-in">
       <CardContent className="py-6 px-2">
         <div className="text-center mb-6">
           <h2 className="font-bold text-2xl mb-2 tracking-tight overflow-hidden text-ellipsis whitespace-pre-line line-clamp-1">
@@ -33,6 +35,7 @@ export const AppleStyleProductCard = (props) => {
             src={image}
             alt={titleImg}
             className="object-contain w-full h-full"
+            loading="lazy"
           />
         </div>
 
@@ -52,15 +55,11 @@ export const AppleStyleProductCard = (props) => {
             variant="link"
             onClick={() =>
               openModal(
-                <DialogContent className="flex flex-col laptop:flex-row laptop:h-[80vh]">
-                  <aside className="laptop:w-[50%] aspect-square ">
-                    <img
-                      className="object-cover w-full h-full"
-                      src={image}
-                      alt=""
-                    />
-                  </aside>
-                  <aside className="laptop:w-[50%] gap-4 flex flex-col justify-center items-center">
+                <DialogContent
+                  className="h-[80vh] flex flex-col laptop:flex-row laptop:h-[80vh] bg-cover bg-center p-0 overflow-hidden"
+                  style={{ backgroundImage: `url('${image}')` }}
+                >
+                  <aside className="laptop:w-[50%] gap-4 flex flex-col justify-center items-center bg-[#ffffff87] w-[100%] h-[100%] rounded-md">
                     <DialogHeader>
                       <DialogTitle className="font-bold text-5xl ">
                         {name}
@@ -91,13 +90,8 @@ export const AppleStyleProductCard = (props) => {
       </div>
     </Card>
   );
-};
+});
+
 AppleStyleProductCard.propTypes = {
   productData: PropTypes.object.isRequired,
-  id: PropTypes.string,
-  image: PropTypes.string,
-  name: PropTypes.string,
-  titleImg: PropTypes.string,
-  description: PropTypes.string,
-  price: PropTypes.string,
 };
