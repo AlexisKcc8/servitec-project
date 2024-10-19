@@ -6,8 +6,8 @@ export const BannerMagSafe = () => {
   return (
     <section className="bg-[#f5f5f7] ">
       <ContainerCenter className=" flex flex-col text-center laptop:flex-row laptop:text-left">
-        <aside className="gap-4 flex flex-col justify-center items-center  laptop:w-[40%] laptop:items-start">
-          <h2 className="font-semibold text-4xl tracking-tight leading-10 laptop:text-[4.3rem] laptop:leading-none laptop:w-[100%]">
+        <aside className="gap-4 flex flex-col justify-center items-center  laptop:w-[50%] laptop:items-start">
+          <h2 className="font-semibold text-4xl tracking-tight leading-10 laptop:text-[5.3rem] laptop:leading-none laptop:w-[100%]">
             MagSafe. Combinaciones increíbles.
           </h2>
           <p className="text-[1.1rem] w-[50%] m-0 laptop:w-[100%] laptop:text-[1.4rem]">
@@ -18,10 +18,10 @@ export const BannerMagSafe = () => {
           </Button>
         </aside>
 
-        <aside className="flex justify-center items-center laptop:w-[70%] laptop:h-[28rem]">
+        <aside className="flex justify-center items-center laptop:w-[50%] ">
           <img
             className="w-full h-full"
-            src="/imgs/magsafe-iphone-big.png"
+            src="/imgs/products-magsafe-whites-desktop.png"
             alt="image-magsafe-iphone"
           />
         </aside>
