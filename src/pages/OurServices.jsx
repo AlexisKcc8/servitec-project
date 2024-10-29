@@ -7,12 +7,15 @@ import {
 import { ourServices } from "@/data/dataInfo";
 import { useState } from "react";
 import { ContainerCenter } from "@/myComponents/ContainerCenter";
+import { PictureImage } from "@/myComponents/PictureImage";
 
 const INITIAL_STATE_IMAGE_DESKTOP = {
   imagenAvifDesktop:
     "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.avif",
   imagenWebpDesktop:
     "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.webp",
+  imagenJpgDesktop:
+    "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.jpg",
 };
 
 export const OurServices = () => {
@@ -65,46 +68,48 @@ export const OurServices = () => {
                   </AccordionTrigger>
                   <AccordionContent className="text-left">
                     <p className="text-[1.1rem] mb-4">{service.description}</p>
-                    <picture className="w-full h-full overflow-hidden laptop:hidden">
-                      <source
-                        className="w-full h-full object-cover"
-                        type="image/avif"
-                        srcSet={service.images.imagenAvif}
-                      />
-                      <source
-                        className="w-full h-full object-cover"
-                        type="image/webp"
-                        srcSet={service.images.imagenWebp}
-                      />
-                      <img
-                        className="w-full h-full object-cover"
-                        src={service.images.imagenJpg}
-                        alt={`imagen-${service.images.imagenJpg}`}
-                      />
-                    </picture>
+                    <PictureImage
+                      classNamePicture="w-full h-full overflow-hidden laptop:hidden"
+                      alt="Imagen responsive"
+                      srcAvif={{
+                        small: service.images.imagenAvif,
+                        medium: service.images.imagenAvif,
+                        large: "",
+                      }}
+                      srcWebp={{
+                        small: service.images.imagenWebp,
+                        medium: service.images.imagenWebp,
+                        large: "",
+                      }}
+                      srcJpg={{
+                        large: service.images.imagenJpg,
+                      }}
+                      classNameImages="w-[100%] h-[100%] object-cover"
+                    />
                   </AccordionContent>
                 </AccordionItem>
               ))
             : null}
         </Accordion>
         <section className="hidden rounded-tr-2xl rounded-br-2xl overflow-hidden laptop:w-[50%] laptop:flex justify-center items-center">
-          <picture className="w-full h-full overflow-hidden">
-            <source
-              className="w-full h-full object-cover"
-              type="image/avif"
-              srcSet={imageDesktopCurrent.imagenAvifDesktop}
-            />
-            <source
-              className="w-full h-full object-cover"
-              type="image/webp"
-              srcSet={imageDesktopCurrent.imagenWebpDesktop}
-            />
-            <img
-              className="w-full h-full object-cover"
-              src={imageDesktopCurrent.imagenJpgDesktop}
-              alt={`imagen`}
-            />
-          </picture>
+          <PictureImage
+            classNamePicture="w-full h-full overflow-hidden"
+            alt="Imagen responsive"
+            srcAvif={{
+              small: "",
+              medium: imageDesktopCurrent.imagenAvifDesktop,
+              large: imageDesktopCurrent.imagenAvifDesktop,
+            }}
+            srcWebp={{
+              small: "",
+              medium: imageDesktopCurrent.imagenWebpDesktop,
+              large: imageDesktopCurrent.imagenWebpDesktop,
+            }}
+            srcJpg={{
+              large: imageDesktopCurrent.imagenJpgDesktop,
+            }}
+            classNameImages="w-[100%] h-[100%] object-cover"
+          />
         </section>
       </article>
     </ContainerCenter>

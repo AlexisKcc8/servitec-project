@@ -123,17 +123,17 @@ export const ourServices = [
       "Realizamos una limpieza profunda, resolvemos problemas técnicos y llevamos a cabo actualizaciones de hardware para optimizar el rendimiento de tu computadora, dejándola como nueva y lista para cualquier tarea.",
     images: {
       imagenAvif:
-        "/imgs/our-brands/our-services/Reparación_y_mantenimiento_a_equipos_de_computo.avif",
+        "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo.avif",
       imagenWebp:
-        "/imgs/our-brands/our-services/Reparación_y_mantenimiento_a_equipos_de_computo.webp",
+        "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo.webp",
       imagenJpg:
-        "/imgs/our-brands/our-services/Reparación_y_mantenimiento_a_equipos_de_computo.jpg",
+        "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo.jpg",
       imagenAvifDesktop:
-        "/imgs/our-brands/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.avif",
+        "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.avif",
       imagenWebpDesktop:
-        "/imgs/our-brands/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.webp",
+        "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.webp",
       imagenJpgDesktop:
-        "/imgs/our-brands/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.jpg",
+        "/imgs/our-services/Reparación_y_mantenimiento_a_equipos_de_computo-laptop.jpg",
     },
   },
   {
@@ -142,18 +142,15 @@ export const ourServices = [
     description:
       "Instalamos y configuramos Windows junto con la paquetería Office para que tu equipo esté listo para usarse de inmediato, sin complicaciones ni estrés.",
     images: {
-      imagenAvif:
-        "/imgs/our-brands/our-services/instalación-de-sistema-operativo.avif",
-      imagenWebp:
-        "/imgs/our-brands/our-services/instalación-de-sistema-operativo.webp",
-      imagenJpg:
-        "/imgs/our-brands/our-services/instalación-de-sistema-operativo.jpg",
+      imagenAvif: "/imgs/our-services/instalación-de-sistema-operativo.avif",
+      imagenWebp: "/imgs/our-services/instalación-de-sistema-operativo.webp",
+      imagenJpg: "/imgs/our-services/instalación-de-sistema-operativo.jpg",
       imagenAvifDesktop:
-        "/imgs/our-brands/our-services/instalación-de-sistema-operativo-laptop.avif",
+        "/imgs/our-services/instalación-de-sistema-operativo-laptop.avif",
       imagenWebpDesktop:
-        "/imgs/our-brands/our-services/instalación-de-sistema-operativo-laptop.webp",
+        "/imgs/our-services/instalación-de-sistema-operativo-laptop.webp",
       imagenJpgDesktop:
-        "/imgs/our-brands/our-services/instalación-de-sistema-operativo-laptop.jpg",
+        "/imgs/our-services/instalación-de-sistema-operativo-laptop.jpg",
     },
   },
   {
@@ -162,18 +159,15 @@ export const ourServices = [
     description:
       "Reparamos tu dispositivo móvil con cuidado y precisión, ya sea por una pantalla rota, problemas de batería u otros fallos, para que puedas disfrutarlo como nuevo nuevamente.",
     images: {
-      imagenAvif:
-        "/imgs/our-brands/our-services/Reparación-de-equipos-móviles.avif",
-      imagenWebp:
-        "/imgs/our-brands/our-services/Reparación-de-equipos-móviles.webp",
-      imagenJpg:
-        "/imgs/our-brands/our-services/Reparación-de-equipos-móviles.jpg",
+      imagenAvif: "/imgs/our-services/Reparación-de-equipos-móviles.avif",
+      imagenWebp: "/imgs/our-services/Reparación-de-equipos-móviles.webp",
+      imagenJpg: "/imgs/our-services/Reparación-de-equipos-móviles.jpg",
       imagenAvifDesktop:
-        "/imgs/our-brands/our-services/Reparación-de-equipos-móviles-laptop.avif",
+        "/imgs/our-services/Reparación-de-equipos-móviles-laptop.avif",
       imagenWebpDesktop:
-        "/imgs/our-brands/our-services/Reparación-de-equipos-móviles-laptop.webp",
+        "/imgs/our-services/Reparación-de-equipos-móviles-laptop.webp",
       imagenJpgDesktop:
-        "/imgs/our-brands/our-services/Reparación-de-equipos-móviles-laptop.jpg",
+        "/imgs/our-services/Reparación-de-equipos-móviles-laptop.jpg",
     },
   },
   {
@@ -182,18 +176,15 @@ export const ourServices = [
     description:
       "Configuramos tus extensores de WiFi para garantizar una señal fuerte y estable en todos los rincones de tu hogar, eliminando las zonas muertas y mejorando tu experiencia de navegación.",
     images: {
-      imagenAvif:
-        "/imgs/our-brands/our-services/Configuraciones-de-extensores-wifi.avif",
-      imagenWebp:
-        "/imgs/our-brands/our-services/Configuraciones-de-extensores-wifi.webp",
-      imagenJpg:
-        "/imgs/our-brands/our-services/Configuraciones-de-extensores-wifi.jpg",
+      imagenAvif: "/imgs/our-services/Configuraciones-de-extensores-wifi.avif",
+      imagenWebp: "/imgs/our-services/Configuraciones-de-extensores-wifi.webp",
+      imagenJpg: "/imgs/our-services/Configuraciones-de-extensores-wifi.jpg",
       imagenAvifDesktop:
-        "/imgs/our-brands/our-services/Configuraciones-de-extensores-wifi-laptop.avif",
+        "/imgs/our-services/Configuraciones-de-extensores-wifi-laptop.avif",
       imagenWebpDesktop:
-        "/imgs/our-brands/our-services/Configuraciones-de-extensores-wifi-laptop.webp",
+        "/imgs/our-services/Configuraciones-de-extensores-wifi-laptop.webp",
       imagenJpgDesktop:
-        "/imgs/our-brands/our-services/Configuraciones-de-extensores-wifi-laptop.jpg",
+        "/imgs/our-services/Configuraciones-de-extensores-wifi-laptop.jpg",
     },
   },
   {
@@ -203,17 +194,17 @@ export const ourServices = [
       "Nos encargamos de la instalación y configuración de cámaras de seguridad, asegurando un monitoreo eficiente y brindándote la tranquilidad de proteger lo que más valoras.",
     images: {
       imagenAvif:
-        "/imgs/our-brands/our-services/Instalación-de-camaras-de-videovigilancia.avif",
+        "/imgs/our-services/Instalación-de-camaras-de-videovigilancia.avif",
       imagenWebp:
-        "/imgs/our-brands/our-services/Instalación-de-camaras-de-videovigilancia.webp",
+        "/imgs/our-services/Instalación-de-camaras-de-videovigilancia.webp",
       imagenJpg:
-        "/imgs/our-brands/our-services/Instalación-de-camaras-de-videovigilancia.jpg",
+        "/imgs/our-services/Instalación-de-camaras-de-videovigilancia.jpg",
       imagenAvifDesktop:
-        "/imgs/our-brands/our-services/Instalación-de-camaras-de-videovigilancia-laptop.avif",
+        "/imgs/our-services/Instalación-de-camaras-de-videovigilancia-laptop.avif",
       imagenWebpDesktop:
-        "/imgs/our-brands/our-services/Instalación-de-camaras-de-videovigilancia-laptop.webp",
+        "/imgs/our-services/Instalación-de-camaras-de-videovigilancia-laptop.webp",
       imagenJpgDesktop:
-        "/imgs/our-brands/our-services/Instalación-de-camaras-de-videovigilancia-laptop.jpg",
+        "/imgs/our-services/Instalación-de-camaras-de-videovigilancia-laptop.jpg",
     },
   },
 ];
