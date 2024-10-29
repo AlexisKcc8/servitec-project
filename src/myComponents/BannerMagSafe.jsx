@@ -21,7 +21,7 @@ export const BannerMagSafe = () => {
         <aside className="flex justify-center items-center laptop:w-[50%] ">
           <img
             className="w-full h-full"
-            src="/imgs/products-magsafe-whites-desktop.png"
+            src="/imgs/products-magsafe-whites-desktop.webp"
             alt="image-magsafe-iphone"
           />
         </aside>

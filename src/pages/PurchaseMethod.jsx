@@ -14,9 +14,9 @@ export const PurchaseMethod = () => {
         Experiencia online o en sucursal.
       </h4>
 
-      <section className="flex flex-wrap w-[100%] laptop:mt-10 laptop:px-24">
-        <aside className="w-[100%]  laptop:w-[50%] my-10 laptop:my-0">
-          <article className="flex flex-col relative gap-8 px-4  min-w-[312px]">
+      <section className="flex flex-wrap w-[100%] laptop:mt-10 laptop:px-24 ">
+        <aside className="w-[100%]  laptop:w-[50%] my-10 laptop:my-0 overflow-hidden">
+          <article className="flex flex-col relative gap-8 px-4  min-w-[312px] overflow-hidden">
             <div className="w-[3px] absolute left-[29px] top-[12px] h-[90%] -z-10 bg-servitect-800"></div>
 
             {purchaseMethod !== null

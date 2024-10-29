@@ -1,7 +1,7 @@
 import { ServitecHero } from "@/pages/ServitecHero";
 import { BannerBrand } from "@/myComponents/BannerBrand";
 import { ProductCarousel } from "@/pages/ProductCarousel";
-// import { PurchaseMethod } from "@/pages/PurchaseMethod";
+import { PurchaseMethod } from "@/pages/PurchaseMethod";
 import { OurServices } from "@/pages/OurServices";
 import { DialogModal } from "@/myComponents/DialogModal";
 import { IncentivesCarousel } from "@/pages/IncentivesCarousel";
@@ -14,7 +14,7 @@ function App() {
         <ServitecHero />
         <BannerBrand />
         <ProductCarousel />
-        {/* <PurchaseMethod /> */} {/*ESTE TIENE PROBLEMAS DE SCROLL VERTICAL*/}
+        <PurchaseMethod /> {/*ESTE TIENE PROBLEMAS DE SCROLL VERTICAL*/}
         <IncentivesCarousel />
         <OurServices />
         <BannerMagSafe />
