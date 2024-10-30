@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export const ObserverElement = (props) => {
   const { children, animateIn, animateOut, className } = props;
   let options = {
-    threshold: 0.3,
+    threshold: 0,
   };
   return (
     <InView {...options}>
