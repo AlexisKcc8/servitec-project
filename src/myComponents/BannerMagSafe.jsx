@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ContainerCenter } from "./ContainerCenter";
 import { StoreSvg } from "@/myComponents/icons/StoreSvg";
 import { ObserverElement } from "./ObserverElement";
+import { PictureImage } from "./PictureImage";
 
 export const BannerMagSafe = () => {
   return (
@@ -19,8 +20,9 @@ export const BannerMagSafe = () => {
           <ObserverElement
             animateIn="animate-fade-left"
             animateOut="animate-fade-right"
+            className="text-center"
           >
-            <p className="text-[1.1rem] w-[50%] m-0 laptop:w-[100%] laptop:text-[1.4rem]">
+            <p className="laptop:text-left text-[1.1rem] m-0 laptop:text-[1.4rem]">
               Añadele una funda, una cartera o un cargador
               alámbrico/inalámbrico.{" "}
             </p>
@@ -40,10 +42,23 @@ export const BannerMagSafe = () => {
           animateOut="animate-fade-right"
           className="flex justify-center items-center laptop:w-[50%] "
         >
-          <img
-            className="w-full h-full"
-            src="/imgs/products-magsafe-whites-desktop.webp"
-            alt="image-magsafe-iphone"
+          <PictureImage
+            classNamePicture="w-full h-full overflow-hidden"
+            alt="Imagen responsive"
+            srcAvif={{
+              small: "/imgs/BannerMagSafe/products-magsafe-movil.avif",
+              medium: "/imgs/BannerMagSafe/products-magsafe-tablet.avif",
+              large: "/imgs/BannerMagSafe/products-magsafe-desktop.avif",
+            }}
+            srcWebp={{
+              small: "/imgs/BannerMagSafe/products-magsafe-movil.webp",
+              medium: "/imgs/BannerMagSafe/products-magsafe-tablet.webp",
+              large: "/imgs/BannerMagSafe/products-magsafe-desktop.webp",
+            }}
+            srcJpg={{
+              large: "/imgs/BannerMagSafe/products-magsafe-desktop.webp",
+            }}
+            classNameImages="w-[100%] h-[100%] object-cover"
           />
         </ObserverElement>
       </ContainerCenter>
