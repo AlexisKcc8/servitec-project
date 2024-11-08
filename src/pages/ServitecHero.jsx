@@ -22,7 +22,7 @@ export const ServitecHero = () => {
         srcJpg={{
           large: "/imgs/hero/bg-hero.jpg",
         }}
-        classNameImages="w-[100%] h-[100%] object-cover "
+        classNameImages="w-[100%] h-[100%] object-cover opacity-50 image-rendering"
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 laptop:via-black/70 to-transparent"></div>
