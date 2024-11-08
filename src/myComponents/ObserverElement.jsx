@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 export const ObserverElement = (props) => {
   const { children, animateIn, animateOut, className } = props;
   let options = {
+    triggerOnce: true, // Solo observar una vez
     threshold: 0,
   };
   return (

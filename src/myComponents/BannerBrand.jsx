@@ -9,7 +9,7 @@ export const BannerBrand = () => {
         animateIn="animate-fade-left"
         animateOut="animate-fade-right"
       >
-        <h2 className=" font-semibold text-xl text-gray-700 opacity-20 laptop:mr-8">
+        <h2 className=" font-semibold text-xl text-gray-700 opacity-30 laptop:mr-8">
           Nuestras marcas:
         </h2>
       </ObserverElement>
@@ -23,8 +23,9 @@ export const BannerBrand = () => {
                 animateOut="animate-fade-down"
               >
                 <img
-                  className=" w-[100%] h-[100%] transition duration-300 ease-in-out object-contain hover:scale-105 opacity-20"
+                  className=" w-[100%] h-[100%] object-contain opacity-20 hover:scale-105 "
                   src={brand.urlBrand}
+                  loading="lazy"
                   alt={`logo-${brand.name}`}
                 />
               </ObserverElement>
