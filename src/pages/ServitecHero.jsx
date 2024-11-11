@@ -29,10 +29,7 @@ export const ServitecHero = () => {
 
       {/* Content */}
       <header className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl overflow-hidden">
-        <ObserverElement
-          animateIn="animate-fade-up"
-          animateOut="animate-fade-down "
-        >
+        <ObserverElement animateIn="animate-fade-up">
           <div className="border border-white rounded-lg title-page-main relative ">
             <h1 className="text-[3.8rem] sm:text-5xl md:text-6xl laptop:text-[10rem] font-bold tracking-tight sm:mb-6 text-white [text-shadow:0_0_20px_rgba(255,255,255,0.3)]">
               SERVITEC
@@ -40,19 +37,13 @@ export const ServitecHero = () => {
           </div>
         </ObserverElement>
 
-        <ObserverElement
-          animateIn="animate-fade-up"
-          animateOut="animate-fade-down"
-        >
+        <ObserverElement animateIn="animate-fade-up">
           <h2 className=" text-[2rem] sm:text-5xl md:text-6xl laptop:text-[3rem] font-bold tracking-tight mb-4 sm:mb-6 text-white [text-shadow:0_0_20px_rgba(255,255,255,0.4)]">
             REPARACIÓNES RÁPIDAS, SONRISAS GARANTIZADAS.
           </h2>
         </ObserverElement>
 
-        <ObserverElement
-          animateIn="animate-fade-left"
-          animateOut="animate-fade-right"
-        >
+        <ObserverElement animateIn="animate-fade-left">
           <p className="text-base sm:text-lg md:text-3xl lg:text-4xl mb-6 sm:mb-8 max-w-3xl mx-auto text-gray-200 [text-shadow:0_0_10px_rgba(255,255,255,0.2)]">
             Expertos en reparación de dispositivos móviles y computadoras.
             Soluciones rápidas y confiables para mantener tu tecnología
@@ -60,10 +51,7 @@ export const ServitecHero = () => {
           </p>
         </ObserverElement>
 
-        <ObserverElement
-          animateIn="animate-fade-down"
-          animateOut="animate-fade-up"
-        >
+        <ObserverElement animateIn="animate-fade-down">
           <div className="animate-delay-150 animate-fill-forwards flex flex-col laptop:flex-row justify-center items-center space-y-4 laptop:space-y-0 laptop:space-x-4">
             <a
               href="#"
