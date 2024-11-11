@@ -126,6 +126,23 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.text-apple-animation {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  animation: fadeUpScale 1s ease-out forwards;
+}
+
+@keyframes fadeUpScale {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 @layer base {
   * {

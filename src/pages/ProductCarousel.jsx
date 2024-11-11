@@ -30,7 +30,7 @@ export const ProductCarousel = () => {
 
       <MyCarousel carouselRef={productsCarouselRef}>
         <ObserverElement
-          animateIn="animate-fade-up"
+          animateIn="text-apple-animation"
           animateOut="animate-fade-down"
           className="card-product product-cover  ease-in duration-300 w-[20rem] text-start p-4 flex flex-col snap-center flex-shrink-0 rounded-lg border border-servitect-700 overflow-hidden hover:cursor-pointer hover:scale-[1.03] hover:ease-in"
         >
@@ -44,7 +44,7 @@ export const ProductCarousel = () => {
         {products.map((product) => (
           <ObserverElement
             key={product.id}
-            animateIn="animate-fade-up"
+            animateIn="text-apple-animation"
             animateOut="animate-fade-down"
             className=""
           >
