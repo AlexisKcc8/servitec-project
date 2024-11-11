@@ -28,22 +28,22 @@ export const ServitecHero = () => {
 
       {/* Content */}
       <header className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl overflow-hidden">
-        <div className="border border-white rounded-lg title-page-main relative ">
+        <div className="animate-fade-down border border-white rounded-lg title-page-main relative ">
           <h1 className="text-[3.8rem] sm:text-5xl md:text-6xl laptop:text-[10rem] font-bold tracking-tight sm:mb-6 text-white [text-shadow:0_0_20px_rgba(255,255,255,0.3)]">
             SERVITEC
           </h1>
         </div>
 
-        <h2 className=" text-[2rem] sm:text-5xl md:text-6xl laptop:text-[3rem] font-bold tracking-tight mb-4 sm:mb-6 text-white [text-shadow:0_0_20px_rgba(255,255,255,0.4)]">
+        <h2 className="animate-fade-up text-[2rem] sm:text-5xl md:text-6xl laptop:text-[3rem] font-bold tracking-tight mb-4 sm:mb-6 text-white [text-shadow:0_0_20px_rgba(255,255,255,0.4)]">
           REPARACIÓNES RÁPIDAS, SONRISAS GARANTIZADAS.
         </h2>
 
-        <p className="text-base sm:text-lg md:text-3xl lg:text-4xl mb-6 sm:mb-8 max-w-3xl mx-auto text-gray-200 [text-shadow:0_0_10px_rgba(255,255,255,0.2)]">
+        <p className="animate-fade-left text-base sm:text-lg md:text-3xl lg:text-4xl mb-6 sm:mb-8 max-w-3xl mx-auto text-gray-200 [text-shadow:0_0_10px_rgba(255,255,255,0.2)]">
           Expertos en reparación de dispositivos móviles y computadoras.
           Soluciones rápidas y confiables para mantener tu tecnología
           funcionando sin problemas.
         </p>
-        <div className="animate-delay-150 animate-fill-forwards flex flex-col laptop:flex-row justify-center items-center space-y-4 laptop:space-y-0 laptop:space-x-4">
+        <div className="animate-fade-right animate-fill-forwards flex flex-col laptop:flex-row justify-center items-center space-y-4 laptop:space-y-0 laptop:space-x-4">
           <a
             href="#"
             className="animation-fill-mode: forwards bg-white flex text-black hover:bg-gray-200 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"

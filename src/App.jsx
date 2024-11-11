@@ -13,7 +13,7 @@ function App() {
       <main className="sm:px-36 min-h-screen relative flex flex-col justify-center">
         <ServitecHero />
         <BannerBrand />
-        {/* <ProductCarousel /> */}
+        <ProductCarousel />
         <PurchaseMethod /> {/*ESTE TIENE PROBLEMAS DE SCROLL VERTICAL*/}
         <IncentivesCarousel />
         <OurServices />
