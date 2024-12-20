@@ -6,12 +6,17 @@ import { OurServices } from "@/pages/OurServices";
 import { DialogModal } from "@/myComponents/DialogModal";
 import { IncentivesCarousel } from "@/pages/IncentivesCarousel";
 import { BannerMagSafe } from "@/myComponents/BannerMagSafe";
+import { VideoPlayer } from "@/myComponents/VideoPlayer";
 
 function App() {
   return (
     <>
       <main className="sm:px-36 min-h-screen relative flex flex-col justify-center">
         <ServitecHero />
+        <VideoPlayer
+          videoSrc="/videos/Video Servitec Original.mp4"
+          thumbnailSrc="/imgs/hero/layer-video-repair.webp"
+        />
         <BannerBrand />
         <ProductCarousel />
         <PurchaseMethod /> {/*ESTE TIENE PROBLEMAS DE SCROLL VERTICAL*/}
