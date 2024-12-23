@@ -7,6 +7,7 @@ import { DialogModal } from "@/myComponents/DialogModal";
 import { IncentivesCarousel } from "@/pages/IncentivesCarousel";
 import { BannerMagSafe } from "@/myComponents/BannerMagSafe";
 import { VideoPlayer } from "@/myComponents/VideoPlayer";
+import { BannerMap } from "@/myComponents/BannerMap";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <IncentivesCarousel />
         <OurServices />
         <BannerMagSafe />
+        <BannerMap />
         {/* //modal generico para las cards o componentes que lo necesiten */}
         <DialogModal />
         <br />

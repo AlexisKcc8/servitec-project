@@ -1,14 +1,14 @@
 import { StoreSvg } from "@/myComponents/icons/StoreSvg";
 import { ArrowDown } from "@/myComponents/icons/ArrowDown";
 import { PictureImage } from "@/myComponents/PictureImage";
-import { ObserverElement } from "@/myComponents/ObserverElement";
+
 export const ServitecHero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black text-white">
       {/* Background image with overlay */}
       <PictureImage
         classNamePicture="absolute inset-0 z-0 w-[100%] h-[100vh]"
-        alt="Imagen responsive"
+        alt="hero presentation image"
         srcAvif={{
           small: "/imgs/hero/bg-hero-movil.avif",
           medium: "/imgs/hero/bg-hero-tablet.avif",
@@ -47,6 +47,8 @@ export const ServitecHero = () => {
         <div className="animate-fade-right flex flex-col laptop:flex-row justify-center items-center space-y-4 laptop:space-y-0 laptop:space-x-4">
           <a
             href="#"
+            target="_blank"
+            rel="noopener noreferrer"
             className="animation-fill-mode: forwards bg-white flex text-black hover:bg-gray-200 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"
           >
             <StoreSvg /> Mirar Productos

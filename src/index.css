@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 100 900;
-  src: url('/fonts/Figtree-VariableFont_wght.woff2') format('woff2'),
-    url('/fonts/Figtree-VariableFont_wght.woff') format('woff'),
-    url("/fonts/Figtree-VariableFont_wght.ttf") format('truetype');
+  src: url("/fonts/Figtree-VariableFont_wght.woff2") format("woff2"),
+    url("/fonts/Figtree-VariableFont_wght.woff") format("woff"),
+    url("/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -74,17 +74,11 @@ html {
 }
 
 main {
-  font-family: "Figtree", 'Segoe UI',
-    Tahoma,
-    Geneva,
-    Verdana,
-    sans-serif,
+  font-family: "Figtree", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
     Courier;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-
+  font-variation-settings: "slnt" 0;
 }
 
 .carousel-container::-webkit-scrollbar {
@@ -96,7 +90,6 @@ main {
   /* Ocultar barra de scroll en IE y Edge */
   scrollbar-width: none;
   /* Ocultar barra de scroll en Firefox */
-
 }
 
 .card-product {
@@ -113,7 +106,7 @@ main {
   background-image: url("/imgs/product-presentation.webp");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 
 .title-page-main {
@@ -134,7 +127,7 @@ main {
 
 @keyframes fadeUpScale {
   0% {
-    opacity: .1;
+    opacity: 0.1;
     transform: translateY(20px) scale(0.95);
   }
 
