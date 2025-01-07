@@ -8,8 +8,13 @@ import { IncentivesCarousel } from "@/pages/IncentivesCarousel";
 import { BannerMagSafe } from "@/myComponents/BannerMagSafe";
 import { VideoPlayer } from "@/myComponents/VideoPlayer";
 import { BannerMap } from "@/myComponents/BannerMap";
+import { MyDrawerFooter } from "@/myComponents/MyDrawerFooter";
+import { MyFooter } from "@/myComponents/MyFooter";
+import { InView } from "react-intersection-observer";
+import { useState } from "react";
 
 function App() {
+  const [footerView, setFooterView] = useState(false);
   return (
     <>
       <main className="sm:px-36 min-h-screen relative flex flex-col justify-center">
@@ -27,6 +32,34 @@ function App() {
         <BannerMap />
         {/* //modal generico para las cards o componentes que lo necesiten */}
         <DialogModal />
+        {footerView ? null : (
+          <InView>
+            {({ ref, inView }) => (
+              <div
+                ref={ref}
+                className={`fixed bottom-8 right-8 z-50 ${
+                  inView ? "animate-fade" : "animate-fade-down"
+                }`}
+              >
+                <MyDrawerFooter>
+                  <MyFooter />
+                </MyDrawerFooter>
+              </div>
+            )}
+          </InView>
+        )}
+        <InView>
+          {({ ref, inView }) => (
+            <div
+              ref={ref}
+              className={`${
+                inView ? setFooterView(true) : setFooterView(false)
+              }`}
+            >
+              <MyFooter />
+            </div>
+          )}
+        </InView>
         <br />
         <br />
         <br />
