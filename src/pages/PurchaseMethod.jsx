@@ -50,7 +50,7 @@ export const PurchaseMethod = () => {
             animateIn="animate-fade-up"
             animateOut="animate-fade-down"
           >
-            <CatalogPhotosButton className="mt-12 ml-4 w-[20rem] flex items-center justify-center whitespace-nowrap text-xl font-bold rounded-[15px]  disabled:opacity-100 hover:bg-primary/90">
+            <CatalogPhotosButton className="bg-black text-white mt-12 ml-4 w-[20rem] flex items-center justify-center whitespace-nowrap text-xl font-bold rounded-[15px]  disabled:opacity-100 hover:bg-primary/90">
               Visualizar Productos
             </CatalogPhotosButton>
           </ObserverElement>

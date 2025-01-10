@@ -18,7 +18,7 @@ export const CatalogPhotosButton = (props) => {
   return (
     <button
       onClick={handleClick}
-      className={`animation-fill-mode: forwards flex bg-black  text-white text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300  ${className}`}
+      className={`text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300  ${className}`}
     >
       <StoreSvg />{" "}
       <span className="ml-2">{children ? children : " Mirar productos"}</span>

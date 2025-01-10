@@ -45,7 +45,9 @@ export const ServitecHero = () => {
           funcionando sin problemas.
         </p>
         <div className="animate-fade-right flex flex-col laptop:flex-row justify-center items-center space-y-4 laptop:space-y-0 laptop:space-x-4">
-          <CatalogPhotosButton className=" font-bold hover:bg-gray-500 bg-servitect-100 text-servitect-950"></CatalogPhotosButton>
+          <CatalogPhotosButton className="bg-white text-black flex items-center justify-center whitespace-nowrap text-xl font-bold rounded-[15px]  disabled:opacity-100 hover:bg-gray-200 hover:text-black">
+            Mirar Productos
+          </CatalogPhotosButton>
 
           <a
             href="#our-services"
