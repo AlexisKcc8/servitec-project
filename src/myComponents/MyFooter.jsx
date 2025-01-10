@@ -36,13 +36,17 @@ export const MyFooter = () => {
   return (
     <ContainerCenter className=" w-[80%] h-full overflow-y-auto carousel-container laptop:w-[100%] ">
       <aside className=" flex flex-col items-center laptop:flex-row laptop:justify-between  laptop:gap-8 laptop:overflow-y-hidden">
-        <div className="w-[8rem] h-[8rem] ">
-          <img
-            className="w-full h-full object-cover"
-            src="/imgs/logo-servitec.gif"
-            alt="logo-servitec.webp"
-          />
-        </div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          loading="lazy"
+          className="w-[8rem] h-[8rem] object-cover"
+        >
+          <source src="/imgs/logo-servitec-min.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
         <div className="laptop:flex">
           <h2 className="text-center text-black font-semibold mb-2 laptop:mb-0 laptop:mr-4">
             Síguenos:
