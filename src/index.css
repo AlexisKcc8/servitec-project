@@ -103,9 +103,9 @@ main {
 }
 
 .product-cover {
-  background-image: url("/imgs/product-presentation.webp");
+  background-image: url("/imgs/logo-servitec.gif");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 

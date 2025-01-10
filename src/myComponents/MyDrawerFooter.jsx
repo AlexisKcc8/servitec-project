@@ -3,7 +3,9 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
+  DrawerDescription,
   DrawerHeader,
+  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
@@ -18,8 +20,8 @@ export function MyDrawerFooter(props) {
         >
           <img
             className=" w-full h-full object-cover"
-            src="/icons/contact-women.svg"
-            alt="icon-contact-women"
+            src="/icons/icon-show-footer.svg"
+            alt="icon-show-footer"
           />
         </Button>
       </DrawerTrigger>
@@ -29,6 +31,10 @@ export function MyDrawerFooter(props) {
             <Button variant="outline">✖️</Button>
           </DrawerClose>
         </DrawerHeader>
+        <DrawerTitle className="text-center font-semibold text-2xl hidden">
+          kley
+        </DrawerTitle>
+        <DrawerDescription className="hidden">hgddshf</DrawerDescription>
         {children}
       </DrawerContent>
     </Drawer>

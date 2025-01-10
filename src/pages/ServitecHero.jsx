@@ -46,7 +46,7 @@ export const ServitecHero = () => {
         </p>
         <div className="animate-fade-right flex flex-col laptop:flex-row justify-center items-center space-y-4 laptop:space-y-0 laptop:space-x-4">
           <a
-            href="#"
+            href="https://www.facebook.com/media/set/?set=a.406010471553159&type=3"
             target="_blank"
             rel="noopener noreferrer"
             className="animation-fill-mode: forwards bg-white flex text-black hover:bg-gray-200 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"

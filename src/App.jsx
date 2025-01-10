@@ -10,11 +10,12 @@ import { VideoPlayer } from "@/myComponents/VideoPlayer";
 import { BannerMap } from "@/myComponents/BannerMap";
 import { MyDrawerFooter } from "@/myComponents/MyDrawerFooter";
 import { MyFooter } from "@/myComponents/MyFooter";
-import { InView } from "react-intersection-observer";
-import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 function App() {
-  const [footerView, setFooterView] = useState(false);
+  const { ref: footerRef, inView: isFooterVisible } = useInView({
+    threshold: 0.1, // Detecta si al menos el 10% del footer es visible
+  });
   return (
     <>
       <main className="sm:px-36 min-h-screen relative flex flex-col justify-center">
@@ -30,46 +31,18 @@ function App() {
         <OurServices />
         <BannerMagSafe />
         <BannerMap />
+        {!isFooterVisible && (
+          <div className={`fixed bottom-8 right-8 z-50 animate-fade-in`}>
+            <MyDrawerFooter>
+              <MyFooter />
+            </MyDrawerFooter>
+          </div>
+        )}
+        <div ref={footerRef}>
+          <MyFooter />
+        </div>
         {/* //modal generico para las cards o componentes que lo necesiten */}
         <DialogModal />
-        {footerView ? null : (
-          <InView>
-            {({ ref, inView }) => (
-              <div
-                ref={ref}
-                className={`fixed bottom-8 right-8 z-50 ${
-                  inView ? "animate-fade" : "animate-fade-down"
-                }`}
-              >
-                <MyDrawerFooter>
-                  <MyFooter />
-                </MyDrawerFooter>
-              </div>
-            )}
-          </InView>
-        )}
-        <InView>
-          {({ ref, inView }) => (
-            <div
-              ref={ref}
-              className={`${
-                inView ? setFooterView(true) : setFooterView(false)
-              }`}
-            >
-              <MyFooter />
-            </div>
-          )}
-        </InView>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
       </main>
     </>
   );

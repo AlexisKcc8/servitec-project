@@ -32,13 +32,21 @@ export const ProductCarousel = () => {
         <ObserverElement
           animateIn="text-apple-animation"
           animateOut="animate-fade-down"
-          className="card-product product-cover  ease-in duration-300 w-[20rem] text-start p-4 flex flex-col snap-center flex-shrink-0 rounded-lg border border-servitect-700 overflow-hidden hover:cursor-pointer hover:scale-[1.03] hover:ease-in"
+          className="card-product product-cover ease-in duration-300 w-[20rem] text-start p-4 flex flex-col snap-center flex-shrink-0 rounded-lg border border-servitect-700 overflow-hidden hover:cursor-pointer hover:scale-[1.03] hover:ease-in"
         >
           <h2 className="font-semibold text-3xl mt-4">Ponte a la moda</h2>
           <p className="text-lg tracking-wide">
             Descubre los nuevos colores y funcionalidades de tus accesorios
             favoritos.
           </p>
+
+          {/* <div className="w-full h-[25rem] relative ">
+            <img
+              className="w-full h-full"
+              src="/public/imgs/logo-servitec.gif"
+              alt=""
+            />
+          </div> */}
         </ObserverElement>
 
         {products.map((product) => (

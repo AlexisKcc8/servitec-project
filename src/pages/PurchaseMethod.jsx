@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { purchaseMethod } from "@/data/dataInfo";
 import { StoreSvg } from "@/myComponents/icons/StoreSvg";
 import { ContainerCenter } from "@/myComponents/ContainerCenter";
@@ -51,9 +50,14 @@ export const PurchaseMethod = () => {
             animateIn="animate-fade-up"
             animateOut="animate-fade-down"
           >
-            <Button className="mt-12 ml-4 items-center justify-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none bg-primary text-primary-foreground hover:bg-primary/90 h-[44px] py-[8px] px-[15px] text-xl font-bold rounded-[15px] gap-[12px] flex disabled:opacity-100 disabled:bg-slate-600">
+            <a
+              href="https://www.facebook.com/media/set/?set=a.406010471553159&type=3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-12 ml-4 w-[18rem] items-center justify-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none bg-primary text-primary-foreground hover:bg-primary/90 h-[44px] py-[8px] px-[15px] text-xl font-bold rounded-[15px] gap-[12px] flex disabled:opacity-100 disabled:bg-slate-600"
+            >
               <StoreSvg /> Visualizar Productos
-            </Button>
+            </a>
           </ObserverElement>
           <ObserverElement
             animateIn="animate-fade-up"

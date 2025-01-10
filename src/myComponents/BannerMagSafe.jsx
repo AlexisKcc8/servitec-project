@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { ContainerCenter } from "./ContainerCenter";
 import { StoreSvg } from "@/myComponents/icons/StoreSvg";
 import { ObserverElement } from "./ObserverElement";
@@ -31,9 +30,14 @@ export const BannerMagSafe = () => {
             animateIn="animate-fade-left"
             animateOut="animate-fade-right"
           >
-            <Button className="z-10 font-bold text-xl bg-black text-white p-6 hover:bg-servitect-900 gap-2 ease-in duration-300">
+            <a
+              href="https://www.facebook.com/media/set/?set=a.406010471553159&type=3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animation-fill-mode: forwards bg-black flex text-white hover:bg-slate-800 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"
+            >
               <StoreSvg /> Mirar Productos
-            </Button>
+            </a>
           </ObserverElement>
         </aside>
 
