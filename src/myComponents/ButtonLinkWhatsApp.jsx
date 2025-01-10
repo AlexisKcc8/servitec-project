@@ -1,4 +1,3 @@
-import { WhatsApp } from "./icons/WhatsApp";
 import PropTypes from "prop-types";
 
 export const ButtonLinkWhatsApp = (props) => {

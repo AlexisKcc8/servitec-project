@@ -1,5 +1,5 @@
 import { Dot } from "lucide-react";
-
+import PropTypes from "prop-types";
 import { ContainerCenter } from "./ContainerCenter";
 import { MySocialsMedia } from "./MySocialsMedia";
 import {
@@ -31,6 +31,9 @@ const MyListItemsFooter = ({ data }) => {
         : null}
     </ul>
   );
+};
+MyListItemsFooter.propTypes = {
+  data: PropTypes.array,
 };
 export const MyFooter = () => {
   return (

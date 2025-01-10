@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PropTypes from "prop-types";
 import {
   Drawer,
   DrawerClose,
@@ -40,3 +41,7 @@ export function MyDrawerFooter(props) {
     </Drawer>
   );
 }
+MyDrawerFooter.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node,
+};

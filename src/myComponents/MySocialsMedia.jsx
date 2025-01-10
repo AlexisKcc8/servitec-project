@@ -1,5 +1,5 @@
 import { socialMedia } from "../data/dataSocialMedia";
-
+import PropTypes from "prop-types";
 export const MySocialsMedia = (props) => {
   const { classBoxMain, classLinksItem, classItemImg } = props;
   return (
@@ -20,4 +20,9 @@ export const MySocialsMedia = (props) => {
       ))}
     </div>
   );
+};
+MySocialsMedia.propTypes = {
+  classBoxMain: PropTypes.string,
+  classLinksItem: PropTypes.string,
+  classItemImg: PropTypes.string,
 };

@@ -1,7 +1,7 @@
 import { ContainerCenter } from "./ContainerCenter";
-import { StoreSvg } from "@/myComponents/icons/StoreSvg";
 import { ObserverElement } from "./ObserverElement";
 import { PictureImage } from "./PictureImage";
+import { CatalogPhotosButton } from "./CatalogPhotosButton";
 
 export const BannerMagSafe = () => {
   return (
@@ -30,14 +30,9 @@ export const BannerMagSafe = () => {
             animateIn="animate-fade-left"
             animateOut="animate-fade-right"
           >
-            <a
-              href="https://www.facebook.com/media/set/?set=a.406010471553159&type=3"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="animation-fill-mode: forwards bg-black flex text-white hover:bg-slate-800 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"
-            >
-              <StoreSvg /> Mirar Productos
-            </a>
+            <CatalogPhotosButton className="animation-fill-mode: forwards bg-black flex text-white hover:bg-slate-800 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto">
+              Mirar Productos
+            </CatalogPhotosButton>
           </ObserverElement>
         </aside>
 

@@ -1,6 +1,6 @@
-import { StoreSvg } from "@/myComponents/icons/StoreSvg";
 import { ArrowDown } from "@/myComponents/icons/ArrowDown";
 import { PictureImage } from "@/myComponents/PictureImage";
+import { CatalogPhotosButton } from "@/myComponents/CatalogPhotosButton";
 
 export const ServitecHero = () => {
   return (
@@ -45,17 +45,11 @@ export const ServitecHero = () => {
           funcionando sin problemas.
         </p>
         <div className="animate-fade-right flex flex-col laptop:flex-row justify-center items-center space-y-4 laptop:space-y-0 laptop:space-x-4">
-          <a
-            href="https://www.facebook.com/media/set/?set=a.406010471553159&type=3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="animation-fill-mode: forwards bg-white flex text-black hover:bg-gray-200 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"
-          >
-            <StoreSvg /> Mirar Productos
-          </a>
+          <CatalogPhotosButton className=" bg-white text-gray-950 hover:bg-gray-200"></CatalogPhotosButton>
+
           <a
             href="#our-services"
-            className="animation-fill-mode: forwards bg-transparent flex text-white border border-white hover:bg-gray-200 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"
+            className="animation-fill-mode: forwards bg-transparent flex  border border-white hover:bg-gray-200 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"
           >
             <ArrowDown /> Servicios
           </a>

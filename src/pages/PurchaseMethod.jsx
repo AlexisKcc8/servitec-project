@@ -1,7 +1,7 @@
 import { purchaseMethod } from "@/data/dataInfo";
-import { StoreSvg } from "@/myComponents/icons/StoreSvg";
 import { ContainerCenter } from "@/myComponents/ContainerCenter";
 import { ObserverElement } from "@/myComponents/ObserverElement";
+import { CatalogPhotosButton } from "@/myComponents/CatalogPhotosButton";
 
 export const PurchaseMethod = () => {
   return (
@@ -50,15 +50,11 @@ export const PurchaseMethod = () => {
             animateIn="animate-fade-up"
             animateOut="animate-fade-down"
           >
-            <a
-              href="https://www.facebook.com/media/set/?set=a.406010471553159&type=3"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-12 ml-4 w-[18rem] items-center justify-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none bg-primary text-primary-foreground hover:bg-primary/90 h-[44px] py-[8px] px-[15px] text-xl font-bold rounded-[15px] gap-[12px] flex disabled:opacity-100 disabled:bg-slate-600"
-            >
-              <StoreSvg /> Visualizar Productos
-            </a>
+            <CatalogPhotosButton className="mt-12 ml-4 w-[20rem] flex items-center justify-center whitespace-nowrap text-xl font-bold rounded-[15px]  disabled:opacity-100 hover:bg-primary/90">
+              Visualizar Productos
+            </CatalogPhotosButton>
           </ObserverElement>
+
           <ObserverElement
             animateIn="animate-fade-up"
             animateOut="animate-fade-down"
