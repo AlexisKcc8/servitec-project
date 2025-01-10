@@ -5,9 +5,13 @@ export const CatalogPhotosButton = (props) => {
   const handleClick = () => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-      window.location.href = "https://wa.me/c/5219971294008";
+      window.location.href =
+        "https://drive.google.com/file/d/11hThknDbDiQxv5wgVwM1dPBEbYelLlCr/view?usp=drive_links";
     } else {
-      window.open("https://wa.me/c/5219971294008", "_blank");
+      window.open(
+        "https://drive.google.com/file/d/11hThknDbDiQxv5wgVwM1dPBEbYelLlCr/view?usp=drive_link",
+        "_blank"
+      );
     }
   };
 
