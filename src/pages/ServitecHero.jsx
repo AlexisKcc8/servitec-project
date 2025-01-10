@@ -45,11 +45,11 @@ export const ServitecHero = () => {
           funcionando sin problemas.
         </p>
         <div className="animate-fade-right flex flex-col laptop:flex-row justify-center items-center space-y-4 laptop:space-y-0 laptop:space-x-4">
-          <CatalogPhotosButton className=" bg-white text-gray-950 hover:bg-gray-200"></CatalogPhotosButton>
+          <CatalogPhotosButton className=" font-bold hover:bg-gray-500 bg-servitect-100 text-servitect-950"></CatalogPhotosButton>
 
           <a
             href="#our-services"
-            className="animation-fill-mode: forwards bg-transparent flex  border border-white hover:bg-gray-200 text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto"
+            className="animation-fill-mode: forwards bg-transparent flex  border border-servitect-200 hover:bg-gray-200 hover:text-black text-base sm:text-lg px-6 sm:px-8 py-2 laptop:py-3 rounded-md transition-all duration-300 w-auto font-bold"
           >
             <ArrowDown /> Servicios
           </a>
