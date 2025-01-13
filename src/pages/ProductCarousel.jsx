@@ -45,7 +45,7 @@ export const ProductCarousel = () => {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-fill"
             loading="lazy"
           >
             <source src="/imgs/logo-servitec-min.mp4" type="video/mp4" />
