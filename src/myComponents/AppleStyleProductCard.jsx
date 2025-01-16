@@ -7,7 +7,7 @@ import { memo } from "react";
 
 export const AppleStyleProductCard = memo((props) => {
   const { productData } = props;
-  const { images, name, titleImg, oldPrice, price } = productData;
+  const { images, name, oldPrice, price } = productData;
   const {
     imagenAvif,
     imagenWebp,
@@ -17,7 +17,7 @@ export const AppleStyleProductCard = memo((props) => {
     imagenJpgDesktop,
   } = images;
 
-  const imageUrl = `${window.location.origin}/imgs/products/${titleImg}`; // URL de la imagen en la carpeta public
+  const imageUrl = `https://servitec-halacho.netlify.app${imagenJpgDesktop}`; // URL de la imagen en la carpeta public
 
   let message = `Hola👋, me gustaría adquirir el siguiente producto: ${name} ${imageUrl}`;
 
