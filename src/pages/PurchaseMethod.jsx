@@ -25,7 +25,7 @@ export const PurchaseMethod = () => {
 
       <section className="flex flex-wrap w-[100%] laptop:mt-10 laptop:px-24 ">
         <aside className="w-[100%]  laptop:w-[50%] my-10 laptop:my-0 ">
-          <article className="flex flex-col relative gap-8 px-4  min-w-[312px] ">
+          <article className="flex flex-col relative gap-8 px-4">
             <div className="w-[3px] absolute left-[29px] top-[12px] h-[90%] -z-10 bg-servitect-800"></div>
 
             {purchaseMethod !== null
@@ -50,7 +50,7 @@ export const PurchaseMethod = () => {
             animateIn="animate-fade-up"
             animateOut="animate-fade-down"
           >
-            <CatalogPhotosButton className="bg-black text-white mt-12 ml-4 w-[20rem] flex items-center justify-center whitespace-nowrap text-xl font-bold rounded-[15px]  disabled:opacity-100 hover:bg-primary/90">
+            <CatalogPhotosButton className="bg-black text-white mt-12 ml-4  flex items-center justify-center whitespace-nowrap text-xl font-bold rounded-[15px]  disabled:opacity-100 hover:bg-primary/90 laptop:w-[20rem]">
               Visualizar Productos
             </CatalogPhotosButton>
           </ObserverElement>

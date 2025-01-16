@@ -42,8 +42,8 @@ function App() {
         </div>
 
         <DialogModal />
-        {/* 
         <PurchaseMethod />
+        {/*
          */}
         {/* //modal generico para las cards o componentes que lo necesiten */}
       </main>
