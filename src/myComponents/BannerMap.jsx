@@ -23,7 +23,8 @@ export const BannerMap = () => {
           </h2>
         </ObserverElement>
       </header>
-      <article className=" rounded-2xl w-[90vw] min-h-[60vh] laptop:flex laptop:w-[100%] laptop:min-h-[90vh] relative overflow-hidden">
+
+      <article className=" rounded-2xl min-w-[80vw] max-w-[82vw] min-h-[60vh] laptop:flex laptop:w-[100%] laptop:min-h-[90vh] relative overflow-hidden ">
         <PictureImage
           classNamePicture="object-cover w-full h-full absolute top-0 left-0"
           alt="our store awareness"

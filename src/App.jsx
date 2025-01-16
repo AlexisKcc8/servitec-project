@@ -26,7 +26,6 @@ function App() {
         />
         <BannerBrand />
         <ProductCarousel />
-        <PurchaseMethod /> {/*ESTE TIENE PROBLEMAS DE SCROLL VERTICAL*/}
         <IncentivesCarousel />
         <OurServices />
         <BannerMagSafe />
@@ -41,8 +40,12 @@ function App() {
         <div ref={footerRef}>
           <MyFooter />
         </div>
-        {/* //modal generico para las cards o componentes que lo necesiten */}
+
         <DialogModal />
+        {/* 
+        <PurchaseMethod />
+         */}
+        {/* //modal generico para las cards o componentes que lo necesiten */}
       </main>
     </>
   );
