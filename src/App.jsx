@@ -26,6 +26,7 @@ function App() {
         />
         <BannerBrand />
         <ProductCarousel />
+        <PurchaseMethod />
         <IncentivesCarousel />
         <OurServices />
         <BannerMagSafe />
@@ -40,12 +41,8 @@ function App() {
         <div ref={footerRef}>
           <MyFooter />
         </div>
-
-        <DialogModal />
-        <PurchaseMethod />
-        {/*
-         */}
         {/* //modal generico para las cards o componentes que lo necesiten */}
+        <DialogModal />
       </main>
     </>
   );
