@@ -5,10 +5,7 @@ import { ObserverElement } from "./ObserverElement";
 export const BannerBrand = () => {
   return (
     <ContainerCenter className="flex flex-col justify-center items-center laptop:flex-row">
-      <ObserverElement
-        animateIn="animate-fade-left"
-        animateOut="animate-fade-right"
-      >
+      <ObserverElement animateIn="animate-fade" animateOut="animate-fade-right">
         <h2 className=" font-semibold text-xl text-gray-700 opacity-30 laptop:mr-8">
           Nuestras marcas:
         </h2>

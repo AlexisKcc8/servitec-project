@@ -50,7 +50,7 @@ export const PictureImage = ({
             src={inView ? srcJpg.large : undefined} // Solo carga la imagen si está en vista
             alt={alt}
             loading="lazy"
-            className={classNameImages}
+            className={`${classNameImages} w-full h-full object-cover`}
           />
         </picture>
       )}
