@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { InView } from "react-intersection-observer";
+
 export const PictureImage = ({
   alt,
   srcJpg,
@@ -8,53 +8,44 @@ export const PictureImage = ({
   classNamePicture,
   classNameImages,
 }) => {
-  let options = {
-    triggerOnce: true, // Solo observar una vez
-    threshold: 0,
-  };
   return (
-    <InView {...options}>
-      {({ ref, inView }) => (
-        <picture className={classNamePicture}>
-          {/* Imagen para pantallas grandes (desktops) */}
-          <source
-            media="(min-width: 1200px)"
-            srcSet={srcAvif.large}
-            type="image/avif"
-          />
-          <source
-            media="(min-width: 1200px)"
-            srcSet={srcWebp.large}
-            type="image/webp"
-          />
+    <picture className={classNamePicture}>
+      {/* Imagen para pantallas grandes (desktops) */}
+      <source
+        media="(min-width: 1200px)"
+        srcSet={srcAvif.large}
+        type="image/avif"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcSet={srcWebp.large}
+        type="image/webp"
+      />
 
-          {/* Imagen para tablets */}
-          <source
-            media="(min-width: 768px)"
-            srcSet={srcAvif.medium}
-            type="image/avif"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcSet={srcWebp.medium}
-            type="image/webp"
-          />
+      {/* Imagen para tablets */}
+      <source
+        media="(min-width: 768px)"
+        srcSet={srcAvif.medium}
+        type="image/avif"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcSet={srcWebp.medium}
+        type="image/webp"
+      />
 
-          {/* Imagen para móviles (primera en cargarse) */}
-          <source srcSet={srcAvif.small} type="image/avif" />
-          <source srcSet={srcWebp.small} type="image/webp" />
+      {/* Imagen para móviles (primera en cargarse) */}
+      <source srcSet={srcAvif.small} type="image/avif" />
+      <source srcSet={srcWebp.small} type="image/webp" />
 
-          {/* Fallback a JPG si no hay soporte para AVIF o WEBP */}
-          <img
-            ref={ref}
-            src={inView ? srcJpg.large : undefined} // Solo carga la imagen si está en vista
-            alt={alt}
-            loading="lazy"
-            className={`${classNameImages} w-full h-full object-cover`}
-          />
-        </picture>
-      )}
-    </InView>
+      {/* Fallback a JPG si no hay soporte para AVIF o WEBP */}
+      <img
+        src={srcJpg.large} // Solo carga la imagen si está en vista
+        alt={alt}
+        loading="lazy"
+        className={`${classNameImages} w-full h-full object-cover`}
+      />
+    </picture>
   );
 };
 PictureImage.propTypes = {

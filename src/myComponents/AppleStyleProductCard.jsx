@@ -29,26 +29,28 @@ export const AppleStyleProductCard = memo((props) => {
         </h2>
       </CardHeader>
       <CardContent className="px-2 flex-1">
-        <PictureImage
-          classNamePicture="aspect-square relative mb-8"
-          alt="Imagen responsive"
-          srcAvif={{
-            small: imagenAvif,
-            medium: "",
-            large: imagenAvifDesktop,
-          }}
-          srcWebp={{
-            small: imagenWebp,
-            medium: "",
-            large: imagenWebpDesktop,
-          }}
-          srcJpg={{
-            small: imagenJpg,
-            medium: "",
-            large: imagenJpgDesktop,
-          }}
-          classNameImages="object-contain w-full h-full"
-        />
+        <div className="w-full aspect-[5/6] relative overflow-hidden bg-gray-100">
+          <PictureImage
+            classNamePicture="aspect-square relative mb-8"
+            alt={`Imagen responsive de ${name}`}
+            srcAvif={{
+              small: imagenAvif,
+              medium: "",
+              large: imagenAvifDesktop,
+            }}
+            srcWebp={{
+              small: imagenWebp,
+              medium: "",
+              large: imagenWebpDesktop,
+            }}
+            srcJpg={{
+              small: imagenJpg,
+              medium: "",
+              large: imagenJpgDesktop,
+            }}
+            classNameImages="object-cover w-full h-full"
+          />
+        </div>
 
         <div className="flex flex-col items-center space-y-4">
           <p className="font-semibold text-2xl">
