@@ -11,6 +11,7 @@ import { BannerMap } from "@/myComponents/BannerMap";
 import { MyDrawerFooter } from "@/myComponents/MyDrawerFooter";
 import { MyFooter } from "@/myComponents/MyFooter";
 import { useInView } from "react-intersection-observer";
+import { BannerMercadoPago } from "@/myComponents/BannerMercadoPago";
 
 function App() {
   const { ref: footerRef, inView: isFooterVisible } = useInView({
@@ -27,6 +28,7 @@ function App() {
         <BannerBrand />
         <ProductCarousel />
         <PurchaseMethod />
+        <BannerMercadoPago />
         <IncentivesCarousel />
         <OurServices />
         <BannerMagSafe />

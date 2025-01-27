@@ -17,7 +17,7 @@ export function MyDrawerFooter(props) {
       <DrawerTrigger asChild>
         <Button
           variant="outline"
-          className="h-[3.5rem] w-[3.5rem] rounded-full px-[.5rem]"
+          className="h-[2.8rem] w-[2.8rem] rounded-full px-[.5rem]"
         >
           <img
             className=" w-full h-full object-cover"

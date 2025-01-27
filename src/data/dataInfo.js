@@ -11,44 +11,6 @@ import {
   UserCheck,
 } from "lucide-react";
 
-export const iconsHero = [
-  {
-    title: "Laptop",
-    src: "/icons/laptop.svg",
-    top: "15%",
-    left: "20%",
-    delay: "3s",
-  },
-  {
-    title: "Audifonos",
-    src: "/icons/audifonos.svg",
-    top: "60%",
-    left: "80%",
-    delay: "2s",
-  },
-  {
-    title: "ScrewDriver",
-    src: "/icons/screwDriver.svg",
-    top: "10%",
-    left: "55%",
-    delay: "1s",
-  },
-  {
-    title: "Usb",
-    src: "/icons/usb.svg",
-    top: "20%",
-    left: "80%",
-    delay: "3s",
-  },
-  {
-    title: "Windows",
-    src: "/icons/windows.svg",
-    top: "55%",
-    left: "5%",
-    delay: "1s",
-  },
-];
-
 export const purchaseMethod = [
   {
     id: crypto.randomUUID(),
@@ -313,11 +275,82 @@ export const incentives = [
     id: "crypto.randomUUID()",
     title: "Garantía de satisfacción total",
     description:
-      "Queremos que estés completamente feliz con tu compra, por eso ofrecemos políticas de devolución y cambios que te respaldan en todo momento.",
+      "Queremos que estés completamente feliz con tu compra, por eso ofrecemos poiliticas de devolución y cambios que te respaldan en todo momento.",
     icon: Smile,
     titleModal: "Tu felicidad, nuestra prioridad",
     descriptionModal:
       "Si algo no sale como esperabas, nuestra política de satisfacción te asegura soluciones rápidas y sin complicaciones.",
     modalTitle: "Garantía total de satisfacción.",
+  },
+];
+
+export const creditCardsMercadoPago = [
+  {
+    id: "crypto.randomUUID()",
+    name: "Visa",
+    image: "/imgs/credit-cards-mercado-pago/visa-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "Mastercard",
+    image: "/imgs/credit-cards-mercado-pago/mastercard-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "American Express",
+    image: "/imgs/credit-cards-mercado-pago/amex-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "Carnet",
+    image: "/imgs/credit-cards-mercado-pago/carnet-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "UpSí Vale",
+    image: "/imgs/credit-cards-mercado-pago/Up-si-vale-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "Toka",
+    image: "/imgs/credit-cards-mercado-pago/Toka-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "Tengo",
+    image: "/imgs/credit-cards-mercado-pago/tengo-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "Pluxee",
+    image: "/imgs/credit-cards-mercado-pago/pluxee-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "Endered",
+    image: "/imgs/credit-cards-mercado-pago/Endered-Logo.svg",
+  },
+];
+
+export const phoneCompanies = [
+  {
+    id: "crypto.randomUUID()",
+    name: "Telcel",
+    image: "/imgs/phone-companies/telcel-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "Movistar",
+    image: "/imgs/phone-companies/movistar-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "unefon",
+    image: "/imgs/phone-companies/unefon-logo.svg",
+  },
+  {
+    id: "crypto.randomUUID()",
+    name: "at-t",
+    image: "/imgs/phone-companies/at-t-logo.svg",
   },
 ];

@@ -85,7 +85,7 @@ export const MyFooter = () => {
         <h3>
           Copyright © 2025 Servitec Halachó. Todos los derechos reservados.
         </h3>
-        <h4>Created by: KR-8🧢</h4>
+        <h4 className="my-2">Desarrollado por: Alexis🧢Chim</h4>
       </footer>
     </ContainerCenter>
   );
