@@ -90,7 +90,8 @@ export const BannerMercadoPago = () => {
               </aside>
             </section>
             <p className="text-[.8rem] my-2">
-              Otras companias disponibles: Bite, Piyofon, MiMovi. 🙌
+              Otras companias disponibles: Bait, Pillofon, MiMóvil, Oui, Axios
+              Mobile, JR Movil. 🙌
             </p>
           </ObserverElement>
         </aside>
